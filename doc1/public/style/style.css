@@ -99,12 +99,12 @@
 
 .section__text-block_bordered-white .section__header::after,
 .section__text-block_bordered-white .section__header::before {
-  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
 }
 
 .section__text-block_bordered-black .section__header::after,
 .section__text-block_bordered-black .section__header::before {
-  border-bottom: 2px solid #3c3c3c;
+  border-top: 2px solid #3c3c3c;
 }
 
 .section__header::after,
@@ -114,7 +114,7 @@
   display: block;
   content:"";
   flex: 1;
-  margin-bottom: 0.44em;
+  margin-top: 0.5em;
 }
 
 .section__header::after,
@@ -173,7 +173,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 47vw;
 }
 
 .section__sub-text-block_icon {
