@@ -64,9 +64,11 @@
   flex-direction: column;
   background-position: right;
   background-size: cover;
+  padding: 12vh 0;
 }
 
 .section__text-block {
+  box-sizing: border-box;
   width: 47vw;
   display: flex;
   flex-direction: column;
@@ -92,7 +94,7 @@
   text-align: center;
   font-family: 'Lato', sans-serif;
   letter-spacing: 8.95px;
-  margin-top: -0.5em;
+  margin-top: -0.47em;
 }
 
 .section__text-block_bordered-white .section__header::after,
@@ -135,10 +137,6 @@
   font-family: 'Lato', sans-serif;
 }
 
-.section__text-block_about-us {
-  margin: 13.5vh 0;
-}
-
 .section__article_abous-us {
   margin-top: 5.92vh;
   line-height: 24px;
@@ -149,10 +147,6 @@
   background-image: url("../assets/services/Layer_4.png");
 }
 
-.section__text-block_services {
-  margin: 11.2vh 0;
-}
-
 .section__article_services {
   color: #ffffff;
   margin-top: 5.92vh;
@@ -161,7 +155,6 @@
 }
 
 .section__text-block_what-we-do {
-  margin: 10vh 0;
   padding-bottom: 8.5vh;
 }
 
@@ -194,8 +187,8 @@
   line-height: 25.89px;
 }
 
-.section__text-block_contact-us {
-  margin: 11vh 0 5vh 0;
+.section_contact-us {
+  padding: 12vh 0 5vh 0;
 }
 
 .section__article_contact-us {
@@ -388,5 +381,20 @@
 @media only screen and (max-width: 1000px) {
   .section__text-block {
     width: 87vw;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .header__text-block_main {
+    font-size: 44px;
+  }
+  
+  .header__text-block_sub {
+    font-size: 12px;
+  }
+
+  .header__logo {
+    width: 45px;
+    height: 47px;
   }
 }
