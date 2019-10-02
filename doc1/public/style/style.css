@@ -64,11 +64,10 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   background-position: right;
   background-size: cover;
-  padding: 11vh 0;
 }
 
 .section__text-block {
@@ -145,7 +144,12 @@ html {
   margin-bottom: 4.9vh;
 }
 
+.section_about_us {
+  height: 45vh;
+}
+
 .section_services {
+  height: 55vh;
   background-image: url("../assets/services/Layer_4.png");
 }
 
@@ -158,6 +162,10 @@ html {
 
 .section__text-block_what-we-do {
   padding-bottom: 8.5vh;
+}
+
+.section_what-we-do {
+  padding: 10vh 0;
 }
 
 .section__sub-text-block_header {
