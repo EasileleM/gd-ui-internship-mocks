@@ -1,0 +1,407 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  max-width: 1200px;
+  width: 100%;
+}
+.header__wrapper {
+  padding: 75px 68.5px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+@media screen and (max-width: 670px) {
+  .header__wrapper {
+    padding: 45px 38.5px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .header__wrapper {
+    padding: 45px 18.5px;
+  }
+}
+.header__page-name {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 100px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-family: "Inconsolata", monospace;
+}
+.header .menu {
+  width: 573px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 670px) {
+  .header .menu {
+    display: none;
+  }
+}
+.header .menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  transition: 200ms ease;
+}
+.header .menu__link:hover {
+  color: #1c1c1c;
+}
+.header__mobile-menu-button {
+  align-self: center;
+  background-color: inherit;
+  background-image: url("../assets/images/menu-icon.png");
+  background-size: cover;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  transition: 200ms ease;
+}
+@media screen and (max-width: 670px) {
+  .header__mobile-menu-button {
+    display: block;
+  }
+}
+.header__mobile-menu-button:hover {
+  transform: rotate(90deg);
+}
+.header .mobile-menu {
+  display: none;
+  justify-content: center;
+}
+@media screen and (max-width: 670px) {
+  .header .mobile-menu {
+    display: flex;
+  }
+}
+.header .mobile-menu__list {
+  list-style-type: none;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .block-sections {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 153.5px;
+}
+.main .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .section__image-wrapper {
+  width: 100%;
+  height: auto;
+}
+.main .section__image {
+  transition: 200ms ease;
+  width: 100%;
+  height: auto;
+}
+.main .section__image:hover {
+  opacity: 0.8;
+}
+.main .section__link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  align-self: flex-start;
+  font-family: "Ubuntu", sans-serif;
+  color: #b4ad9e;
+}
+.main .section__link:hover {
+  opacity: 0.8;
+}
+.main .section__header-wrapper {
+  text-decoration: none;
+}
+.main .section__header {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  font-size: 30px;
+  font-weight: 400;
+  word-break: break-word;
+}
+.main .section__header:hover {
+  opacity: 0.8;
+}
+.main .section__text {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  word-break: break-word;
+}
+.main .section_magazine-cover {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 68.5px;
+}
+@media screen and (max-width: 670px) {
+  .main .section_magazine-cover {
+    padding: 0 38.5px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .main .section_magazine-cover {
+    padding: 0 18.5px;
+  }
+}
+.main .section_magazine-cover .section__image-wrapper {
+  margin-bottom: 99px;
+}
+@media screen and (max-width: 430px) {
+  .main .section_magazine-cover .section__image-wrapper {
+    margin-bottom: 29px;
+  }
+}
+.main .section_magazine-cover .section__article {
+  padding: 0 85px;
+}
+.main .section_magazine-cover .section__header-wrapper {
+  margin: 0 28px 0 34px;
+}
+@media screen and (max-width: 430px) {
+  .main .section_magazine-cover .section__header-wrapper {
+    margin: 0 14px 0 17px;
+  }
+}
+.main .section_magazine-cover .section__text {
+  margin-bottom: 52px;
+}
+@media screen and (max-width: 430px) {
+  .main .section_magazine-cover .section__text {
+    margin-bottom: 22px;
+  }
+}
+.main .section_basic-section {
+  flex: 1 1 300px;
+  margin-top: 135px;
+  max-width: 100%;
+  min-width: 300px;
+}
+.main .section_basic-section .section__image-wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+.main .section_basic-section .section__header-wrapper {
+  margin: 0 28px 0 34px;
+}
+.main .section_position-left {
+  margin-right: 20px;
+}
+.main .section_position-right {
+  margin-left: 20px;
+}
+@media screen and (max-width: 945px) {
+  .main .section_basic-section {
+    flex: 0 1 auto;
+    margin: 135px auto 0 auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .main .section_basic-section {
+    flex: 0 1 auto;
+    margin: 95px auto 0 auto;
+    min-width: 200px;
+  }
+}
+.main .subscribe {
+  margin-top: 122px;
+  width: 100%;
+  height: 287px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+.main .subscribe__header {
+  margin-top: 73px;
+  font-family: "Playfair Display", serif;
+  color: #333333;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+}
+@media screen and (max-width: 430px) {
+  .main .subscribe__header {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+}
+.main .subscribe__email-form {
+  background: inherit;
+  margin-bottom: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 9px;
+}
+@media screen and (max-width: 430px) {
+  .main .subscribe__email-form {
+    width: 250px;
+  }
+}
+.main .subscribe__input {
+  flex: 1;
+  background: inherit;
+  border: 0;
+  outline: 0;
+  font-family: "Playfair Display", serif;
+}
+.main .subscribe__button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: inherit;
+  border: 0;
+}
+.main .load-more {
+  width: 100%;
+  display: flex;
+  margin-top: 165px;
+}
+.main .load-more__button {
+  background-color: white;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 1px solid #626262;
+  color: #626262;
+  font-family: "Playfair Display", serif;
+  padding: 21px 34px;
+  transition: 200ms ease;
+}
+.main .load-more__button:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: 750px) {
+  .main .section_magazine-cover .section__article {
+    padding: 0 25px;
+  }
+  .main .block-sections {
+    padding: 0 93.5px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .main .block-sections {
+    padding: 0 63.5px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .main .block-sections {
+    padding: 0 38.5px;
+  }
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.footer:before {
+  content: "";
+  flex-grow: 1;
+}
+.footer__link {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: #000000;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  transition: 200ms ease;
+}
+.footer__link:hover {
+  opacity: 0.7;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 40px 0;
+  margin-top: 100px;
+  height: 97px;
+  box-sizing: border-box;
+}
+.footer__left-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 199px;
+  margin-left: 150px;
+}
+@media screen and (max-width: 850px) {
+  .footer__left-block {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .footer__left-block {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer__left-block {
+    margin-left: 20px;
+    width: 150px;
+  }
+}
+.footer__right-block {
+  width: 139px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 71px;
+  margin-left: 10px;
+}
+@media screen and (max-width: 500px) {
+  .footer__right-block {
+    margin-right: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
