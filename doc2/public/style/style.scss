@@ -110,11 +110,12 @@ $default-font: "Playfair Display", serif;
 
     &__button {
       & {
+        font-family: "Inconsolata", monospace;
         width: 30px;
         line-height: 20px;
         text-align: center;
         font-size: 50px;
-        margin-top: 15px;
+        margin-top: 17px;
         margin-bottom: 20px;
         display: none;
         @media screen and (max-width: $third-main-breakpoint){
