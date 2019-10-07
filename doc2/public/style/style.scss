@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-wrap: break-word;
 }
 
 body {
@@ -59,6 +60,21 @@ $default-font: "Playfair Display", serif;
     text-transform: uppercase;
     letter-spacing: 6px;
     font-family: "Inconsolata", monospace;
+
+    @media screen and (max-width: $forth-main-breakpoint){
+      margin-right: 0;
+    }
+  }
+
+  #header__menu-data {
+    display: none;
+  }
+
+  #header__menu-data:checked + nav .menu__link {
+    display: block;
+  }
+  #header__menu-data:checked + nav .menu__button:after {
+    content: attr(data-opened);
   }
 
   .menu {
@@ -68,7 +84,8 @@ $default-font: "Playfair Display", serif;
       display: flex;
       justify-content: space-between;
       @media screen and (max-width: $third-main-breakpoint) {
-        display: none;
+        flex-direction: column;
+        align-items: flex-end;
       }
     }
     &__link {
@@ -81,44 +98,32 @@ $default-font: "Playfair Display", serif;
         font-family: $default-font;
         color: $default-text-color;
         transition: 200ms ease;
+        @media screen and (max-width: $third-main-breakpoint) {
+          display: none;
+        }
       }
 
       &:hover {
         color: #1c1c1c;
       }
     }
-  }
 
-  &__mobile-menu-button {
-    & {
-      align-self: center;
-      background-color: inherit;
-      background-image: url("../assets/images/menu-icon.png");
-      background-size: cover;
-      width: 46px;
-      height: 46px;
-      border: 0;
-      cursor: pointer;
-      display: none;
-      transition: 200ms ease;
-    }
-
-    @media screen and (max-width: $third-main-breakpoint) {
-      display: block;
-    }
-    &:hover {
-      transform: rotate(90deg);
-    }
-  }
-
-  .mobile-menu {
-    display: none;
-    justify-content: center;
-    @media screen and (max-width: $third-main-breakpoint) {
-      display: flex;
-    }
-    &__list {
-      list-style-type: none;
+    &__button {
+      & {
+        width: 30px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 50px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        display: none;
+        @media screen and (max-width: $third-main-breakpoint){
+          display: block;
+        }
+      }
+      &:after {
+        content: attr(data-closed);
+      }
     }
   }
 }
@@ -154,6 +159,10 @@ $default-font: "Playfair Display", serif;
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    &__article {
+      width: 100%;
     }
 
     &__image-wrapper {
@@ -195,11 +204,12 @@ $default-font: "Playfair Display", serif;
 
     &__header {
       & {
+        width: 100%;
         font-family: $default-font;
         color: $default-text-color;
         font-size: 30px;
         font-weight: 400;
-        word-break: break-word;
+        word-break: break-all;
       }
       &:hover {
         opacity: 0.8;
@@ -207,6 +217,7 @@ $default-font: "Playfair Display", serif;
     }
 
     &__text {
+      width: 100%;
       font-family: $default-font;
       color: $default-text-color;
       line-height: 24px;
@@ -332,7 +343,7 @@ $default-font: "Playfair Display", serif;
 
     &__input {
       flex: 1;
-      background: inherit;
+      background: $gray-background-color;
       border: 0;
       outline: 0;
       font-family: $default-font;
