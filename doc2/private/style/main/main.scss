@@ -189,7 +189,9 @@
       }
     }
 
-    &__input {
+    &__input[type="email"] {
+      font-family: $default-font;
+      color: $default-text-color;
       flex: 1;
       background: $gray-background-color;
       border: 0;
