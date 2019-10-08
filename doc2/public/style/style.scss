@@ -70,10 +70,10 @@ $default-font: "Playfair Display", serif;
     display: none;
   }
 
-  #header__menu-data:checked + nav .menu__link {
+  #header__menu-data:checked + .menu .menu__link {
     display: block;
   }
-  #header__menu-data:checked + nav .menu__button:after {
+  #header__menu-data:checked + .menu .menu__button:after {
     content: attr(data-opened);
   }
 
