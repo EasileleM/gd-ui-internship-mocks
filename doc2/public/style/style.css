@@ -50,10 +50,10 @@ body {
 .header #header__menu-data {
   display: none;
 }
-.header #header__menu-data:checked + nav .menu__link {
+.header #header__menu-data:checked + .menu .menu__link {
   display: block;
 }
-.header #header__menu-data:checked + nav .menu__button:after {
+.header #header__menu-data:checked + .menu .menu__button:after {
   content: attr(data-opened);
 }
 .header .menu {
