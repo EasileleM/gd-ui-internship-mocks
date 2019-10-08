@@ -1,4 +1,4 @@
-@import '../variables/variables.scss';
+@import "../variables/variables.scss";
 
 .main {
   width: 100%;
@@ -30,21 +30,23 @@
 
     &__article {
       width: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     &__image-wrapper {
       width: 100%;
       height: auto;
+      &:hover,
+      &:hover + .section__article .section__header-wrapper {
+        opacity: 0.8;
+      }
     }
 
     &__image {
       transition: 200ms ease;
       width: 100%;
       height: auto;
-
-      &:hover {
-        opacity: 0.8;
-      }
     }
 
     &__link {
@@ -62,11 +64,11 @@
     }
 
     &__header-wrapper {
+      align-self: flex-start;
       text-decoration: none;
     }
 
     &__header {
-      width: 100%;
       font-family: $default-font;
       color: $default-text-color;
       font-size: 30px;
@@ -107,12 +109,6 @@
       .section__article {
         padding: 0 $narrow-content-padding - $wide-content-padding;
       }
-      .section__header-wrapper {
-        margin: 0 28px 0 34px;
-        @media screen and (max-width: $forth-main-breakpoint) {
-          margin: 0 14px 0 17px;
-        }
-      }
       .section__text {
         margin-bottom: 52px;
         @media screen and (max-width: $forth-main-breakpoint) {
@@ -131,8 +127,15 @@
         height: auto;
         margin-bottom: 32px;
       }
-      .section__header-wrapper {
-        margin: 0 28px 0 34px;
+
+      @media screen and (max-width: $section-wrap) {
+        flex: 0 1 auto;
+        margin: 135px auto 0 auto;
+      }
+      @media screen and (max-width: $forth-main-breakpoint) {
+        flex: 0 1 auto;
+        margin: 95px auto 0 auto;
+        min-width: 200px;
       }
     }
 
@@ -142,20 +145,6 @@
 
     &_position-right {
       margin-left: 20px;
-    }
-
-    @media screen and (max-width: $section-wrap) {
-      &_basic-section {
-        flex: 0 1 auto;
-        margin: 135px auto 0 auto;
-      }
-    }
-    @media screen and (max-width: $forth-main-breakpoint) {
-      &_basic-section {
-        flex: 0 1 auto;
-        margin: 95px auto 0 auto;
-        min-width: 200px;
-      }
     }
   }
 

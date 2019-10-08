@@ -1,4 +1,4 @@
-@import '../variables/variables.scss';
+@import "../variables/variables.scss";
 
 .footer {
   display: flex;
@@ -6,64 +6,65 @@
   flex-direction: column;
   flex-grow: 1;
 
-&:before {
-  content: "";
-  flex-grow: 1;
-}
-
-&__link {
-  text-decoration: none;
-  font-family: $default-font;
-  color: #000000;
-  line-height: 24px;
-  font-weight: 400;
-  font-size: 14px;
-  transition: 200ms ease;
-
-  &:hover {
-    opacity: 0.7;
+  &:before {
+    content: "";
+    flex-grow: 1;
   }
-}
 
-&__wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background-color: $gray-background-color;
-  padding: 40px 0;
-  margin-top: 100px;
-  height: 97px;
-  box-sizing: border-box;
-}
+  &__link {
+    text-decoration: none;
+    font-family: $default-font;
+    color: #000000;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    transition: 200ms ease;
 
-&__left-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 199px;
-  margin-left: 150px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 
-  @media screen and (max-width: $first-main-breakpoint) {
-    margin-left: 80px;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $gray-background-color;
+    padding: 40px 0;
+    margin-top: 100px;
+    height: 97px;
+    box-sizing: border-box;
   }
-  @media screen and (max-width: $third-main-breakpoint) {
-    margin-left: 40px;
-  }
-  @media screen and (max-width: 500px) {
-    margin-left: 20px;
-    width: 150px;
-  }
-}
 
-&__right-block {
-  width: 139px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-right: 71px;
-  margin-left: 10px;
-  @media screen and (max-width: 500px) {
-    margin-right: 40px;
+  &__links {
+    padding: 0 100px;
+    max-width: $max-page-width;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $third-main-breakpoint) {
+      padding: 0 50px;
+    }
+
+    @media screen and (max-width: $forth-main-breakpoint) {
+      padding: 0 10px;
+    }
   }
-}
+
+  &__links-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_position-left {
+      width: 200px;
+      margin-right: 10px;
+    }
+
+    &_position-right {
+      min-width: 100px;
+      margin-left: 10px;
+    }
+  }
 }

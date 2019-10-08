@@ -1,8 +1,9 @@
-@import '../variables/variables.scss';
+@import "../variables/variables.scss";
 
 .header {
   max-width: $max-page-width;
   width: 100%;
+  max-height: 150px;
 
   &__wrapper {
     padding: 75px $wide-content-padding;
@@ -33,15 +34,29 @@
     }
   }
 
-  #header__menu-data {
+  #headerMenuData {
     display: none;
   }
 
-  #header__menu-data:checked + .menu .menu__link {
+  #headerMenuData:checked + .menu .menu__link {
     display: block;
   }
-  #header__menu-data:checked + .menu .menu__button:after {
+  #headerMenuData:checked + .menu .menu__button {
+    font-size: 90px;
+  }
+
+  #headerMenuData:checked + .menu .menu__button:after {
     content: attr(data-opened);
+  }
+  #headerMenuData:checked + .menu {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .menu {
@@ -64,8 +79,8 @@
       color: $default-text-color;
       transition: 200ms ease;
       @media screen and (max-width: $third-main-breakpoint) {
-        line-height: 40px;
-        font-size: 24px;
+        line-height: 30px;
+        font-size: 30px;
         display: none;
       }
 
