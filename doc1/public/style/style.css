@@ -118,12 +118,12 @@ body {
   border-top-color: inherit;
 }
 
-.section__text-block_bordered-black {
+.section__text-block_bordered-secondary-color {
   border-color: #3c3c3c;
   color: #3c3c3c;
 }
 
-.section__text-block_bordered-white {
+.section__text-block_bordered-primary-color {
   border-color: #ffffff;
   color: #ffffff;
 }
