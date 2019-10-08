@@ -127,16 +127,6 @@
         height: auto;
         margin-bottom: 32px;
       }
-
-      @media screen and (max-width: $section-wrap) {
-        flex: 0 1 auto;
-        margin: 135px auto 0 auto;
-      }
-      @media screen and (max-width: $forth-main-breakpoint) {
-        flex: 0 1 auto;
-        margin: 95px auto 0 auto;
-        min-width: 200px;
-      }
     }
 
     &_position-left {
@@ -145,6 +135,20 @@
 
     &_position-right {
       margin-left: 20px;
+    }
+
+    @media screen and (max-width: $section-wrap) {
+      &_basic-section {
+        flex: 0 1 auto;
+        margin: 135px auto 0 auto;
+      }
+    }
+    @media screen and (max-width: $forth-main-breakpoint) {
+      &_basic-section {
+        flex: 0 1 auto;
+        margin: 95px auto 0 auto;
+        min-width: 200px;
+      }
     }
   }
 

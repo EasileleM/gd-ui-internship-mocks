@@ -43,6 +43,7 @@
   }
   #headerMenuData:checked + .menu .menu__button {
     font-size: 90px;
+    width: 60px;
   }
 
   #headerMenuData:checked + .menu .menu__button:after {
@@ -90,6 +91,7 @@
     }
 
     &__button {
+      cursor: pointer;
       font-family: "Inconsolata", monospace;
       width: 30px;
       line-height: 20px;
