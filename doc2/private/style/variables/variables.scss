@@ -1,0 +1,20 @@
+// breakpoints
+$section-wrap: 945px;
+$first-main-breakpoint: 850px;
+$second-main-breakpoint: 750px;
+$third-main-breakpoint: 670px;
+$forth-main-breakpoint: 430px;
+
+// sizes
+$max-page-width: 1200px;
+$max-wide-content-width: 1063px;
+$max-narrow-content-width: 893px;
+$wide-content-padding: ($max-page-width - $max-wide-content-width) / 2;
+$narrow-content-padding: ($max-page-width - $max-narrow-content-width) / 2;
+
+// colors and fonts
+$link-color: #b4ad9e;
+$link-font: "Ubuntu", sans-serif;
+$gray-background-color: #f0f0f0;
+$default-text-color: #626262;
+$default-font: "Playfair Display", serif;

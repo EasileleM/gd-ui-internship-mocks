@@ -1,0 +1,94 @@
+@import '../variables/variables.scss';
+
+.header {
+  max-width: $max-page-width;
+  width: 100%;
+
+  &__wrapper {
+    padding: 75px $wide-content-padding;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    @media screen and (max-width: $third-main-breakpoint) {
+      padding: 45px $wide-content-padding - 30px;
+    }
+    @media screen and (max-width: $forth-main-breakpoint) {
+      padding: 45px $wide-content-padding - 50px;
+    }
+  }
+
+  &__page-name {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 100px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-family: "Inconsolata", monospace;
+
+    @media screen and (max-width: $forth-main-breakpoint) {
+      margin-right: 0;
+    }
+  }
+
+  #header__menu-data {
+    display: none;
+  }
+
+  #header__menu-data:checked + .menu .menu__link {
+    display: block;
+  }
+  #header__menu-data:checked + .menu .menu__button:after {
+    content: attr(data-opened);
+  }
+
+  .menu {
+    width: 573px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $third-main-breakpoint) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &__link {
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 24px;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: $default-font;
+      color: $default-text-color;
+      transition: 200ms ease;
+      @media screen and (max-width: $third-main-breakpoint) {
+        line-height: 40px;
+        font-size: 24px;
+        display: none;
+      }
+
+      &:hover {
+        color: #1c1c1c;
+      }
+    }
+
+    &__button {
+      font-family: "Inconsolata", monospace;
+      width: 30px;
+      line-height: 20px;
+      text-align: center;
+      font-size: 50px;
+      margin-top: 17px;
+      margin-bottom: 20px;
+      display: none;
+      @media screen and (max-width: $third-main-breakpoint) {
+        display: block;
+      }
+      &:after {
+        content: attr(data-closed);
+      }
+    }
+  }
+}
