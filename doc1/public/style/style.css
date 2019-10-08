@@ -140,6 +140,7 @@ body {
 }
 
 .section__article {
+  line-height: 25.89px;
   margin-right: 8.7vw;
   margin-left: 8.7vw;
   word-wrap: break-word;
@@ -147,21 +148,17 @@ body {
   text-align: center;
   font-weight: 300;
   font-family: 'Lato';
+  align-self: center;
 }
 
-.section__article_about-us-top {
-  line-height: 24px;
-}
-
-.section__article_about-us-position-top {
+.section__article_position-top {
   margin-top: 5.92vh;
   margin-bottom: 3vh;
 }
 
-.section__article_about-us-position-bottom {
+.section__article_position-bottom {
   margin-bottom: 4.9vh;
   padding: 0 40px;
-  align-self: center;
 }
 
 .section_services {
@@ -170,15 +167,6 @@ body {
 
 .section__article_services {
   line-height: 25.89px;
-}
-
-.section__article_services-position-top {
-  margin-top: 5.92vh;
-  margin-bottom: 1vh;
-}
-
-.section__article_services-position-bottom {
-  margin-bottom: 4.9vh;
 }
 
 .section__sub-text-block_header {
@@ -191,12 +179,8 @@ body {
   margin-bottom: 3.4vh;
 }
 
-.section__header_what-we-do {
-  margin-bottom: 10vh;
-}
-
 .section__sub-text-block {
-  margin-bottom: 10vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,23 +193,20 @@ body {
   margin-bottom: 3.8vh;
 }
 
-.section__article_what-we-do {
+.section__sub-text-block_position-bottom {
+  margin-bottom: 10vh;
+}
+
+.section__article_sub {
   font-size: 14px;
-  line-height: 25.89px;
-  white-space: pre-line;
 }
 
-.section_contact-us {
-  padding: 100px 0 50px 0;
-}
-
-.section__article_contact-us {
+.section__article_alone {
   margin-top: 5.92vh;
-  line-height: 25.89px;
   margin-bottom: 4.9vh;
 }
 
-.section__button_contact-us {
+.section__button {
   text-transform: uppercase;
   text-decoration: none;
   background-color: #3c3c3c;
@@ -244,7 +225,7 @@ body {
   transition: 400ms ease;
 }
 
-.section__button_contact-us:hover {
+.section__button:hover {
   background-color: #ffffff;
   color: #3c3c3c;
 }
@@ -371,7 +352,7 @@ body {
   .our-works_bottom {
     margin-top: 0;
   }
-  .section__button_contact-us {
+  .section__button {
     width: 35%;
   }
 }
