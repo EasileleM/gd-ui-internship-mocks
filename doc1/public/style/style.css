@@ -149,16 +149,16 @@ body {
   font-family: 'Lato';
 }
 
-.section__article_abous-us-top {
+.section__article_about-us-top {
   line-height: 24px;
 }
 
-.section__article_abous-us-position-top {
+.section__article_about-us-position-top {
   margin-top: 5.92vh;
   margin-bottom: 3vh;
 }
 
-.section__article_abous-us-position-bottom {
+.section__article_about-us-position-bottom {
   margin-bottom: 4.9vh;
   padding: 0 40px;
   align-self: center;
