@@ -60,6 +60,9 @@
     &_position-left {
       width: 200px;
       margin-right: 10px;
+      @media screen and (max-width: $fifth-main-breakpoint){
+        width: 140px;
+      }
     }
 
     &_position-right {
