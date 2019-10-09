@@ -82,6 +82,7 @@
         }
       }
       .section__article {
+        box-sizing: border-box;
         padding: 0 $narrow-inside-wide-content-padding;
         @media screen and (max-width: $second-main-breakpoint) {
           padding: 0 $narrow-inside-wide-content-padding - 60px;
