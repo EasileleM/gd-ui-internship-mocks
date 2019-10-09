@@ -9,6 +9,10 @@
     content: "";
     flex-grow: 1;
   }
+  &__link-image {
+    width: 15px;
+    height: auto;
+  }
 
   &__link {
     text-decoration: none;
