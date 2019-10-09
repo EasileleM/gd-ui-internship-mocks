@@ -1,0 +1,48 @@
+.menu {
+  width: 573px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: $default-line-height;
+    font-weight: 400;
+    font-size: $default-font-size;
+    font-family: $default-font;
+    color: $default-text-color;
+    transition: 200ms ease;
+    @media screen and (max-width: $medium) {
+      line-height: $default-line-height + 6px;
+      font-size: $default-font-size + 16px;
+      display: none;
+    }
+
+    &:hover {
+      color: $header-link-color-hover;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    font-family: $header-mobile-menu-button-font;
+    width: 30px;
+    line-height: $header-mobile-menu-open-button-line-height;
+    text-align: center;
+    font-size: $header-mobile-menu-open-button-font-size;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    display: none;
+    @media screen and (max-width: $medium) {
+      display: block;
+    }
+    &:after {
+      content: attr(data-closed);
+    }
+  }
+}

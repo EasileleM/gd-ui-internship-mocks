@@ -1,1 +1,9 @@
-@import 'footer/footer.scss', 'header/header.scss', 'main/main.scss', 'base.scss';
+@import 'footer/footer.scss';
+@import 'header/header.scss';
+@import 'main/main.scss';
+@import 'base.scss';
+@import 'menu/menu.scss';
+@import 'block-sections/block-sections.scss';
+@import 'section/section.scss';
+@import 'subscribe/subscribe.scss';
+@import 'load-more/load-more.scss';

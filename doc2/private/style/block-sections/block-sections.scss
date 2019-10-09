@@ -1,21 +1,19 @@
 @import "../variables/variables.scss";
 
-@mixin block-sections() {
-  .block-sections {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 0 $narrow-content-padding;
-    @media screen and (max-width: $large) {
-      padding: 0 $narrow-content-padding - 60px;
-    }
-    @media screen and (max-width: $medium) {
-      padding: 0 $narrow-content-padding - 90px;
-    }
-    @media screen and (max-width: $small) {
-      padding: 0 $narrow-content-padding - 115px;
-    }
+.block-sections {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 $narrow-content-padding;
+  @media screen and (max-width: $large) {
+    padding: 0 $narrow-content-padding - 60px;
+  }
+  @media screen and (max-width: $medium) {
+    padding: 0 $narrow-content-padding - 90px;
+  }
+  @media screen and (max-width: $small) {
+    padding: 0 $narrow-content-padding - 115px;
   }
 }

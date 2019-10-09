@@ -1,67 +1,65 @@
 @import "../variables/variables.scss";
 
-@mixin subscribe() {
-  .subscribe {
-    margin-top: 122px;
-    width: 100%;
-    height: 287px;
+.subscribe {
+  margin-top: 122px;
+  flex-grow: 1;
+  height: 287px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $gray-background-color;
+
+  &__header {
+    margin-top: 73px;
+    font-family: $default-font;
+    color: $subscribe-header-color;
+    font-size: $header-font-size;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    @media screen and (max-width: $small) {
+      font-size: $header-font-size - 10px;
+      letter-spacing: 0;
+    }
+  }
+
+  &__email-form {
+    background: inherit;
+    margin-bottom: 74px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: $gray-background-color;
-  
-    &__header {
-      margin-top: 73px;
-      font-family: $default-font;
-      color: $subscribe-header-color;
-      font-size: 30px;
-      font-weight: 400;
-      letter-spacing: 0.75px;
-      @media screen and (max-width: $small) {
-        font-size: 20px;
-        letter-spacing: 0;
-      }
+    width: 400px;
+    border-bottom: 2px solid $email-input-border-color;
+    padding-bottom: 9px;
+    @media screen and (max-width: $small) {
+      width: 250px;
     }
-  
-    &__email-form {
-      background: inherit;
-      margin-bottom: 74px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 400px;
-      border-bottom: 2px solid $email-input-border-color;
-      padding-bottom: 9px;
-      @media screen and (max-width: $small) {
-        width: 250px;
-      }
-    }
-  
-    &__input[type="email"] {
-      font-family: $default-font;
-      color: $default-text-color;
-      flex: 1;
-      background: $gray-background-color;
-      border: 0;
-      outline: 0;
-      font-family: $default-font;
-    }
-  
-    &__button {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      padding: 0;
-      background: inherit;
-      border: 0;
-      margin-right: 5px;
-    }
-    &__button-image {
-      width: 20px;
-      height: 20px;
-      transform: rotate(45deg);
-      opacity: 0.5;
-    }
+  }
+
+  &__input[type="email"] {
+    font-family: $default-font;
+    color: $default-text-color;
+    flex: 1;
+    background: $gray-background-color;
+    border: 0;
+    outline: 0;
+    font-family: $default-font;
+  }
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background: inherit;
+    border: 0;
+    margin-right: 5px;
+  }
+  &__button-image {
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    opacity: 0.5;
   }
 }

@@ -2,7 +2,6 @@
 
 .footer {
   display: flex;
-  width: 100%;
   flex-direction: column;
   flex-grow: 1;
 
@@ -15,9 +14,9 @@
     text-decoration: none;
     font-family: $default-font;
     color: $link-footer-color;
-    line-height: 24px;
+    line-height: $default-line-height;
     font-weight: 400;
-    font-size: 14px;
+    font-size: $default-font-size;
     transition: 200ms ease;
 
     &:hover {

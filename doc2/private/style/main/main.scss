@@ -1,19 +1,10 @@
 @import "../variables/variables.scss";
-@import "../block-sections/block-sections.scss";
-@import "../section/section.scss";
-@import "../subscribe/subscribe.scss";
-@import "../load-more/load-more.scss";
 
 .main {
-  @include block-sections();
-  @include section();
-  @include subscribe();
-  @include load-more();
-
-  width: 100%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 
   &__wrapper {
     max-width: $max-page-width;
