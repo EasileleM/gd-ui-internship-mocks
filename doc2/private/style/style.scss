@@ -1,15 +1,1 @@
-@import 'footer/footer.scss', 'header/header.scss', 'main/main.scss';
-
-html {
-  scroll-behavior: smooth;
-  word-wrap: break-word;
-  -ms-word-wrap: break-word;
-}
-
-body {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+@import 'footer/footer.scss', 'header/header.scss', 'main/main.scss', 'base.scss';

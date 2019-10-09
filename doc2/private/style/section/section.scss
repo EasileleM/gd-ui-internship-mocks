@@ -1,0 +1,128 @@
+@import "../variables/variables.scss";
+
+@mixin section() {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__article {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__image-wrapper {
+      width: 100%;
+      height: auto;
+      &:hover,
+      &:hover + .section__article .section__header-wrapper {
+        opacity: 0.8;
+      }
+    }
+
+    &__image {
+      transition: 200ms ease;
+      width: 100%;
+      height: auto;
+    }
+
+    &__link {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 300;
+      text-transform: uppercase;
+      align-self: flex-start;
+      font-family: $link-font;
+      color: $link-color;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &__header-wrapper {
+      align-self: flex-start;
+      text-decoration: none;
+    }
+
+    &__header {
+      font-family: $default-font;
+      color: $default-text-color;
+      font-size: 30px;
+      font-weight: 400;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      font-family: $default-font;
+      color: $default-text-color;
+      line-height: 24px;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    &_magazine-cover {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 $wide-content-padding;
+      @media screen and (max-width: $third-main-breakpoint) {
+        padding: 0 $wide-content-padding - 30px;
+      }
+      @media screen and (max-width: $forth-main-breakpoint) {
+        padding: 0 $wide-content-padding - 50px;
+      }
+      .section__image-wrapper {
+        margin-bottom: 99px;
+        @media screen and (max-width: $forth-main-breakpoint) {
+          margin-bottom: 29px;
+        }
+      }
+      .section__article {
+        padding: 0 $narrow-inside-wide-content-padding;
+        @media screen and (max-width: $second-main-breakpoint) {
+          padding: 0 $narrow-inside-wide-content-padding - 60px;
+        }
+      }
+      .section__text {
+        margin-bottom: 52px;
+        @media screen and (max-width: $forth-main-breakpoint) {
+          margin-bottom: 22px;
+        }
+      }
+    }
+
+    &_position-left {
+      margin-right: 20px;
+    }
+
+    &_position-right {
+      margin-left: 20px;
+    }
+
+    &_basic-section {
+      flex: 1 1 300px;
+      margin-top: 135px;
+      max-width: 100%;
+      min-width: 300px;
+      @media screen and (max-width: $section-wrap) {
+        flex: 0 1 auto;
+        margin: 135px auto 0 auto;
+      }
+      @media screen and (max-width: $forth-main-breakpoint) {
+        flex: 0 1 auto;
+        margin: 95px auto 0 auto;
+        min-width: 200px;
+      }
+
+      &__image-wrapper {
+        width: 100%;
+        height: auto;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

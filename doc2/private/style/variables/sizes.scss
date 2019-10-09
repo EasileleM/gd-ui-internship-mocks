@@ -1,0 +1,7 @@
+$max-page-width: 1200px;
+$max-wide-content-width: 1063px;
+$max-narrow-content-width: 893px;
+$wide-content-padding: ($max-page-width - $max-wide-content-width) / 2;
+$narrow-content-padding: ($max-page-width - $max-narrow-content-width) / 2;
+$narrow-inside-wide-content-padding: $narrow-content-padding - $wide-content-padding;
+

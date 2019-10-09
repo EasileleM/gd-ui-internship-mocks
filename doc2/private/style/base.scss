@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
