@@ -69,28 +69,28 @@
       box-sizing: border-box;
       width: 100%;
       padding: 0 $wide-content-padding;
-      @media screen and (max-width: $third-main-breakpoint) {
+      @media screen and (max-width: $medium) {
         padding: 0 $wide-content-padding - 30px;
       }
-      @media screen and (max-width: $forth-main-breakpoint) {
+      @media screen and (max-width: $small) {
         padding: 0 $wide-content-padding - 50px;
       }
       .section__image-wrapper {
         margin-bottom: 99px;
-        @media screen and (max-width: $forth-main-breakpoint) {
+        @media screen and (max-width: $small) {
           margin-bottom: 29px;
         }
       }
       .section__article {
         box-sizing: border-box;
         padding: 0 $narrow-inside-wide-content-padding;
-        @media screen and (max-width: $second-main-breakpoint) {
+        @media screen and (max-width: $large) {
           padding: 0 $narrow-inside-wide-content-padding - 60px;
         }
       }
       .section__text {
         margin-bottom: 52px;
-        @media screen and (max-width: $forth-main-breakpoint) {
+        @media screen and (max-width: $small) {
           margin-bottom: 22px;
         }
       }
@@ -113,7 +113,7 @@
         flex: 0 1 auto;
         margin: 135px auto 0 auto;
       }
-      @media screen and (max-width: $forth-main-breakpoint) {
+      @media screen and (max-width: $small) {
         flex: 0 1 auto;
         margin: 95px auto 0 auto;
         min-width: 200px;

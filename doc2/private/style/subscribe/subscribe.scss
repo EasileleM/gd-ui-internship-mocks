@@ -18,7 +18,7 @@
       font-size: 30px;
       font-weight: 400;
       letter-spacing: 0.75px;
-      @media screen and (max-width: $forth-main-breakpoint) {
+      @media screen and (max-width: $small) {
         font-size: 20px;
         letter-spacing: 0;
       }
@@ -33,7 +33,7 @@
       width: 400px;
       border-bottom: 2px solid $email-input-border-color;
       padding-bottom: 9px;
-      @media screen and (max-width: $forth-main-breakpoint) {
+      @media screen and (max-width: $small) {
         width: 250px;
       }
     }

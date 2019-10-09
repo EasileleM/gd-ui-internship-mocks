@@ -44,11 +44,11 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: $third-main-breakpoint) {
+    @media screen and (max-width: $medium) {
       padding: 0 50px;
     }
 
-    @media screen and (max-width: $forth-main-breakpoint) {
+    @media screen and (max-width: $small) {
       padding: 0 10px;
     }
   }
@@ -60,7 +60,7 @@
     &_position-left {
       width: 200px;
       margin-right: 10px;
-      @media screen and (max-width: $fifth-main-breakpoint){
+      @media screen and (max-width: $extra-small){
         width: 140px;
       }
     }
