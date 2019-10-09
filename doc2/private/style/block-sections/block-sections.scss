@@ -5,15 +5,14 @@
   flex-flow: row wrap;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0 $narrow-content-padding;
-  padding-bottom: 122px;
+  padding: 0 $narrow-content-padding 122px $narrow-content-padding;
   @media screen and (max-width: $large) {
-    padding: 0 $narrow-content-padding - 60px;
+    padding: 0 $narrow-content-padding - 60px 122px $narrow-content-padding - 60px;
   }
   @media screen and (max-width: $medium) {
-    padding: 0 $narrow-content-padding - 90px;
+    padding: 0 $narrow-content-padding - 90px 122px $narrow-content-padding - 90px;
   }
   @media screen and (max-width: $small) {
-    padding: 0 $narrow-content-padding - 115px;
+    padding: 0 $narrow-content-padding - 115px 122px $narrow-content-padding - 115px;
   }
 }
