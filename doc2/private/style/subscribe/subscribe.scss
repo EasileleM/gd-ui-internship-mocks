@@ -55,6 +55,13 @@
       padding: 0;
       background: inherit;
       border: 0;
+      margin-right: 5px;
+    }
+    &__button-image {
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      opacity: 0.5;
     }
   }
 }
