@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   max-height: 150px;
-  flex-grow: 1;
 
   &__wrapper {
     max-width: $max-page-width;
@@ -22,15 +21,10 @@
   }
 
   &__page-name {
+    @include typography($header-font-size, $header-page-name-font, $default-line-height, 400, uppercase);
     color: $header-page-name;
-    font-size: $header-font-size;
-    font-weight: 400;
-    line-height: $default-line-height;
     margin-right: 100px;
-    text-transform: uppercase;
     letter-spacing: 6px;
-    font-family: $header-page-name-font;
-
     @media screen and (max-width: $small) {
       margin-right: 0;
     }

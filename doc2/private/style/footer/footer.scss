@@ -1,9 +1,9 @@
 @import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
 
 .footer {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 
   &:before {
     content: "";
@@ -16,13 +16,9 @@
 
   &__link {
     text-decoration: none;
-    font-family: $default-font;
-    color: $link-footer-color;
-    line-height: $default-line-height;
-    font-weight: 400;
-    font-size: $default-font-size;
+    @include typography();
     transition: 200ms ease;
-
+    color: $link-footer-color;
     &:hover {
       opacity: 0.7;
     }

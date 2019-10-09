@@ -1,4 +1,5 @@
 @import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
 
 .section {
   display: flex;
@@ -46,10 +47,9 @@
   }
 
   &__header {
-    font-family: $default-font;
+    @include typography($header-font-size);
+    line-height: normal;
     color: $default-text-color;
-    font-size: $header-font-size;
-    font-weight: 400;
     &:hover {
       opacity: 0.8;
     }
@@ -57,11 +57,8 @@
 
   &__text {
     width: 100%;
-    font-family: $default-font;
     color: $default-text-color;
-    line-height: $default-line-height;
-    font-weight: 400;
-    font-size: $default-font-size;
+    @include typography();
   }
 
   &_magazine-cover {

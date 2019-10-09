@@ -1,9 +1,7 @@
 @import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
 
 .subscribe {
-  align-self: stretch;
-  margin-top: 122px;
-  flex-grow: 1;
   height: 287px;
   display: flex;
   flex-direction: column;
@@ -13,10 +11,8 @@
 
   &__header {
     margin-top: 73px;
-    font-family: $default-font;
+    @include typography($header-font-size, $default-font);
     color: $subscribe-header-color;
-    font-size: $header-font-size;
-    font-weight: 400;
     letter-spacing: 0.75px;
     @media screen and (max-width: $small) {
       font-size: $header-font-size - 10px;
@@ -39,13 +35,12 @@
   }
 
   &__input[type="email"] {
-    font-family: $default-font;
+    @include typography();
     color: $default-text-color;
     flex: 1;
     background: $gray-background-color;
     border: 0;
     outline: 0;
-    font-family: $default-font;
   }
 
   &__button {
@@ -62,5 +57,9 @@
     height: 20px;
     transform: rotate(45deg);
     opacity: 0.5;
+  }
+
+  &_stretch {
+    align-self: stretch;
   }
 }

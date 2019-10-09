@@ -1,9 +1,7 @@
 @import "../variables/variables.scss";
 .load-more {
-  flex-grow: 1;
   display: flex;
-  align-self: center;
-  margin-top: 165px;
+  padding-top: 45px;
 
   &__button {
     background-color: $load-more-button-background;

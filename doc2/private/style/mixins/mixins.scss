@@ -1,0 +1,14 @@
+@import "../variables/typography.scss";
+@mixin typography(
+  $font-size: $default-font-size,
+  $font-family: $default-font,
+  $line-height: $default-line-height,
+  $font-weight: 400,
+  $text-transform: none
+) {
+  font-size: $font-size;
+  font-family: $font-family;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  text-transform: $text-transform;
+}

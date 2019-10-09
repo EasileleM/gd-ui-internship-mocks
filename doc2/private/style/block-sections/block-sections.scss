@@ -1,12 +1,12 @@
 @import "../variables/variables.scss";
 
 .block-sections {
-  flex-grow: 1;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0 $narrow-content-padding;
+  padding-bottom: 122px;
   @media screen and (max-width: $large) {
     padding: 0 $narrow-content-padding - 60px;
   }

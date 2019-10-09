@@ -1,3 +1,4 @@
+@import "../mixins/mixins.scss";
 .menu {
   width: 573px;
   align-items: center;
@@ -9,12 +10,9 @@
   }
 
   &__link {
+    @include typography();
     text-decoration: none;
     text-transform: uppercase;
-    line-height: $default-line-height;
-    font-weight: 400;
-    font-size: $default-font-size;
-    font-family: $default-font;
     color: $default-text-color;
     transition: 200ms ease;
     @media screen and (max-width: $medium) {
@@ -29,12 +27,10 @@
   }
 
   &__button {
+    @include typography($header-mobile-menu-open-button-font-size, $header-mobile-menu-button-font, $header-mobile-menu-open-button-line-height);
     cursor: pointer;
-    font-family: $header-mobile-menu-button-font;
     width: 30px;
-    line-height: $header-mobile-menu-open-button-line-height;
     text-align: center;
-    font-size: $header-mobile-menu-open-button-font-size;
     margin-top: 17px;
     margin-bottom: 20px;
     display: none;
