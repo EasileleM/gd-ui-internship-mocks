@@ -1,15 +1,18 @@
 @import "../variables/variables.scss";
 .header {
-  max-width: $max-page-width;
+  display: flex;
+  justify-content: center;
   max-height: 150px;
   flex-grow: 1;
 
   &__wrapper {
+    max-width: $max-page-width;
     padding: 75px $wide-content-padding;
     width: 100%;
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
+    align-items: center;
     @media screen and (max-width: $medium) {
       padding: 45px $wide-content-padding - 30px;
     }
