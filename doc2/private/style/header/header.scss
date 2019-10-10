@@ -38,7 +38,7 @@
   }
   &__menu-data-input:checked + .menu .menu__button {
     width: 60px;
-    font-size: $header-mobile-menu-close-button-font-size;
+    font-size: $menu-close-button-font-size;
   }
 
   &__menu-data-input:checked + .menu .menu__button:after {
