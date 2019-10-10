@@ -1,17 +1,17 @@
 @import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
 .load-more {
   display: flex;
   padding-top: 45px;
 
   &__button {
-    background-color: $load-more-button-background;
-    cursor: pointer;
+    @include typography($load-more-font-size, $default-font, normal);
+    transition: 200ms ease;
     margin: 0 auto;
     border: 1px solid $default-text-color;
-    color: $default-text-color;
-    font-family: $default-font;
     padding: 21px 34px;
-    transition: 200ms ease;
+    background-color: $load-more-button-background;
+    cursor: pointer;
 
     &:hover {
       opacity: 0.7;

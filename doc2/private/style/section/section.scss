@@ -7,9 +7,9 @@
   align-items: center;
 
   &__article {
-    width: 100%;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   &__image-wrapper {
@@ -24,23 +24,19 @@
   }
 
   &__image {
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
     transition: 200ms ease;
+    display: block;
     width: 100%;
     height: auto;
   }
 
   &__link {
-    text-decoration: none;
-    font-size: $default-font-size;
-    font-weight: 300;
-    text-transform: uppercase;
+    @include typography($default-font-size, $link-font, normal, 300, uppercase, $link-color);
     align-self: flex-start;
-    font-family: $link-font;
-    color: $link-color;
+    text-decoration: none;
 
     &:hover {
       opacity: 0.8;
@@ -53,9 +49,7 @@
   }
 
   &__header {
-    @include typography($header-font-size);
-    line-height: normal;
-    color: $default-text-color;
+    @include typography($header-font-size, $default-font, normal);
     &:hover {
       opacity: 0.8;
     }
@@ -78,8 +72,8 @@
       padding: 0 $wide-content-padding - 50px;
     }
     .section__image-wrapper {
-      padding-bottom: 48%;
       margin-bottom: 99px;
+      padding-bottom: 48%;
       @media screen and (max-width: $small) {
         margin-bottom: 29px;
       }
@@ -123,9 +117,9 @@
     }
 
     .section__image-wrapper {
+      margin-bottom: 32px;
       width: 100%;
       height: auto;
-      margin-bottom: 32px;
     }
   }
 }

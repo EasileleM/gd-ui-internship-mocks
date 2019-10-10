@@ -2,16 +2,16 @@
 @import "../mixins/mixins.scss";
 
 .subscribe {
-  height: 287px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 287px;
   background-color: $gray-background-color;
 
   &__header {
+    @include typography($header-font-size);
     margin-top: 73px;
-    @include typography($header-font-size, $default-font);
     color: $subscribe-header-color;
     letter-spacing: 0.75px;
     @media screen and (max-width: $small) {
@@ -21,14 +21,14 @@
   }
 
   &__email-form {
-    background: inherit;
-    margin-bottom: 74px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    margin-bottom: 74px;
     border-bottom: 2px solid $email-input-border-color;
+    width: 400px;
     padding-bottom: 9px;
+    background: inherit;
     @media screen and (max-width: $small) {
       width: 250px;
     }
@@ -36,26 +36,25 @@
 
   &__input[type="email"] {
     @include typography();
-    color: $default-text-color;
     flex: 1;
-    background: $gray-background-color;
     border: 0;
+    background: $gray-background-color;
     outline: 0;
   }
 
   &__button {
-    cursor: pointer;
     display: flex;
     align-items: center;
+    margin-right: 5px;
+    border: 0;
     padding: 0;
     background: inherit;
-    border: 0;
-    margin-right: 5px;
+    cursor: pointer;
   }
   &__button-image {
+    transform: rotate(45deg);
     width: 20px;
     height: 20px;
-    transform: rotate(45deg);
     opacity: 0.5;
   }
 
