@@ -10,9 +10,8 @@
   background-color: $gray-background-color;
 
   &__header {
-    @include typography($header-font-size);
+    @include typography($header-font-size, $color: $subscribe-header-color);
     margin-top: 73px;
-    color: $subscribe-header-color;
     letter-spacing: 0.75px;
     @media screen and (max-width: $small) {
       font-size: $header-font-size - 10px;

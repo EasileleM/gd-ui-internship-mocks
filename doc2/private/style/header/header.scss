@@ -22,8 +22,8 @@
   }
 
   &__page-name {
-    margin-right: 100px;
     @include typography($header-font-size, $header-page-name-font, $default-line-height, 400, uppercase, $header-page-name);
+    margin-right: 100px;
     letter-spacing: 6px;
     @media screen and (max-width: $small) {
       margin-right: 0;

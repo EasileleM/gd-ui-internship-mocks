@@ -15,7 +15,6 @@
     transition: 200ms ease;
     text-decoration: none;
     text-transform: uppercase;
-    color: $default-text-color;
     @media screen and (max-width: $medium) {
       display: none;
       line-height: $default-line-height + 6px;
@@ -28,7 +27,7 @@
   }
 
   &__button {
-    @include typography($header-mobile-menu-open-button-font-size, $header-mobile-menu-button-font, normal);
+    @include typography($header-mobile-menu-open-button-font-size, $header-mobile-menu-button-font, normal, $color: $header-page-name);
     display: none;
     margin-top: 10px;
     margin-bottom: 20px;
