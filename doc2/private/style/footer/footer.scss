@@ -2,8 +2,8 @@
 @import "../mixins/mixins.scss";
 
 .footer {
-  display: flex;
-  flex-direction: column;
+  @include flex($flex-direction: column);
+
   &:before {
     content: "";
     flex-grow: 1;
@@ -31,8 +31,7 @@
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: center;
+    @include flex(center);
     box-sizing: border-box;
     margin-top: 100px;
     height: 97px;
@@ -42,8 +41,7 @@
   }
 
   &__links {
-    display: flex;
-    justify-content: space-between;
+    @include flex(space-between);
     box-sizing: border-box;
     padding: 0 100px;
     max-width: $max-page-width;
@@ -59,9 +57,7 @@
   }
 
   &__links-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(space-between, center);
     
     &_position-left {
       margin-right: 10px;

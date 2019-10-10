@@ -1,13 +1,12 @@
 @import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
+
 .header {
-  display: flex;
-  justify-content: center;
+  @include flex(center);
   max-height: 150px;
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(space-between, center);
     box-sizing: border-box;
     padding: 75px $wide-content-padding;
     max-width: $max-page-width;

@@ -1,9 +1,8 @@
 @import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
 
 .block-sections {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  @include flex(space-between, $flex-wrap: wrap);
   box-sizing: border-box;
   padding: 0 $narrow-content-padding 122px $narrow-content-padding;
   @media screen and (max-width: $large) {

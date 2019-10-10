@@ -2,10 +2,7 @@
 @import "../mixins/mixins.scss";
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(space-between, center, column);
   height: 287px;
   background-color: $gray-background-color;
 
@@ -20,9 +17,7 @@
   }
 
   &__email-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
     margin-bottom: 74px;
     border-bottom: 2px solid $email-input-border-color;
     width: 400px;
@@ -42,8 +37,7 @@
   }
 
   &__button {
-    display: flex;
-    align-items: center;
+    @include flex(normal, center);
     margin-right: 5px;
     border: 0;
     padding: 0;

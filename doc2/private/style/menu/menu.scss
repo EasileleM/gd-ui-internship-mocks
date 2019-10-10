@@ -1,8 +1,6 @@
 @import "../mixins/mixins.scss";
 .menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex(space-between, center);
   width: 573px;
   
   @media screen and (max-width: $medium) {

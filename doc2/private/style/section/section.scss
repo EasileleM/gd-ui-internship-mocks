@@ -2,13 +2,10 @@
 @import "../mixins/mixins.scss";
 
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(normal, center, column);
 
   &__article {
-    display: flex;
-    flex-direction: column;
+    @include flex($flex-direction: column);
     width: 100%;
   }
 
