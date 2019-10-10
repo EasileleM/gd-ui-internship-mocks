@@ -27,17 +27,16 @@
   }
 
   &__button {
-    @include typography($header-mobile-menu-open-button-font-size, $header-mobile-menu-button-font, $header-mobile-menu-open-button-line-height);
+    @include typography($header-mobile-menu-open-button-font-size, $header-mobile-menu-button-font, normal);
     cursor: pointer;
-    width: 30px;
-    text-align: center;
-    margin-top: 17px;
+    margin-top: 10px;
     margin-bottom: 20px;
     display: none;
     @media screen and (max-width: $medium) {
       display: block;
     }
     &:after {
+      margin-right: -2px;
       content: attr(data-closed);
     }
   }

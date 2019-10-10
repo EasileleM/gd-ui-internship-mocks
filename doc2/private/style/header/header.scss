@@ -43,6 +43,7 @@
   }
 
   &__menu-data-input:checked + .menu .menu__button:after {
+    margin-right: 0;
     content: attr(data-opened);
   }
   &__menu-data-input:checked + .menu {
