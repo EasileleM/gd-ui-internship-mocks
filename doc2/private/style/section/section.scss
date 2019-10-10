@@ -13,8 +13,10 @@
   }
 
   &__image-wrapper {
+    position: relative;
+    display: block;
     width: 100%;
-    height: auto;
+    padding-bottom: 66.34%;
     &:hover,
     &:hover + .section__article .section__header-wrapper {
       opacity: 0.8;
@@ -22,6 +24,10 @@
   }
 
   &__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: 200ms ease;
     width: 100%;
     height: auto;
@@ -72,6 +78,7 @@
       padding: 0 $wide-content-padding - 50px;
     }
     .section__image-wrapper {
+      padding-bottom: 48%;
       margin-bottom: 99px;
       @media screen and (max-width: $small) {
         margin-bottom: 29px;

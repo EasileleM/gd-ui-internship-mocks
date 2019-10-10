@@ -24,6 +24,14 @@
     }
   }
 
+  &__text {
+    margin: 0;
+    text-decoration: none;
+    @include typography();
+    transition: 200ms ease;
+    color: $link-footer-color;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: center;
