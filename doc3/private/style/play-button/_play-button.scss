@@ -1,0 +1,44 @@
+@import "../global/global";
+
+.play-button {
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0;
+  height: 59px;
+  width: 59px;
+  background-color: $play-button-color-first;
+  cursor: pointer;
+  outline: 0;
+  &:hover{
+    box-shadow: inset 10px 10px 35px -4px rgba(0,0,0,0.54);
+  }
+  
+
+  &__triangle {
+    transition: 100ms ease;
+    margin-right: -4px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 17px solid $play-button-color-second;
+    height: 0;
+    width: 0;
+    background-color: transparent;
+  }
+
+  &_onPlay &__triangle{
+    margin-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 6px solid $play-button-color-second;
+    border-right: 6px solid $play-button-color-second;
+    width: 5px;
+    height: 17px;
+  }
+
+  &_header {
+    z-index: 1;
+  }
+}

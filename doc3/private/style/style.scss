@@ -1,3 +1,10 @@
-@import "global/_global.scss";
-@import "wrapper/_wrapper.scss";
-@import "_base.scss";
+@import "global/global";
+@import "wrapper/wrapper";
+@import "base";
+@import "header/header";
+@import "play-button/play-button";
+@import "try-now-button/try-now-button";
+@import "main/main";
+@import "text-block/text-block";
+@import "decorator/decorator";
+@import "try-now-form/try-now-form";

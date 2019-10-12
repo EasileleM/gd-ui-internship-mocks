@@ -1,0 +1,209 @@
+@import "../global/global";
+
+.main {
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+
+  &__block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &_first {
+      height: 724px;
+      .text-block {
+        margin-right: auto;
+        max-width: 60%;
+        width: 100%;
+        height: 724px;
+        padding: 130px 70px 100px 120px;
+
+        &__label {
+          align-self: flex-start;
+        }
+
+        &__header {
+          margin-bottom: 40px;
+        }
+
+        &__text_position-top {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &_second {
+      height: 670px;
+      background-color: $main-wrapper-sub-background;
+
+      .text-block {
+        width: 100%;
+        height: 675px;
+
+        &__label {
+          margin-top: 138px;
+        }
+
+        &__sub-image-wrapper {
+          margin-bottom: 30px;
+          width: 65px;
+          height: 65px;
+        }
+
+        &__sub-text-block {
+          margin-top: 91px;
+        }
+      }
+    }
+
+    &_third {
+      height: 550px;
+      .main__block {
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      .text-block {
+        align-self: center;
+        margin-right: 100px;
+        max-width: 40%;
+        &__label {
+          align-self: flex-start;
+        }
+        &__header {
+          margin-bottom: 36px;
+        }
+      }
+    }
+
+    &_forth {
+      height: 648px;
+      background-color: $founders-block-background;
+      background-size: cover;
+      .main__block {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: normal;
+      }
+      .text-block {
+        width: 100%;
+
+        &__label {
+          margin-top: -24px;
+          text-transform: none;
+        }
+
+        &__text {
+          opacity: 0.8;
+          font-weight: 400;
+          font-style: italic;
+          color: $founders-primary-text-color;
+        }
+
+        &__header {
+          opacity: 0.8;
+          color: $founders-primary-text-color;
+        }
+
+        &__sub-image-wrapper {
+          margin-bottom: 12px;
+          border: 2px solid $founders-image-border-color;
+          width: 76px;
+          height: 76px;
+          background-color: $founders-image-bg-color;
+        }
+
+        &__sub-text-block {
+          margin-top: 110px;
+        }
+      }
+    }
+
+    &_fifth {
+      height: 754px;
+      background-color: $main-wrapper-sub-background;
+
+      .text-block {
+        width: 100%;
+        max-width: 647px;
+        text-align: center;
+
+        &__label {
+          margin-top: 98px;
+        }
+        &__text {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    &_sixth { 
+      height: 467px;
+      background-color: $try-now-block-bg;
+      .text-block {
+        width: 100%;
+
+        &__label {
+          margin-top: 98px;
+        }
+
+        &__header {
+          color: $tertiary-color;
+        }
+
+        &__text_termsServices {
+          opacity: 0.4;
+          margin-top: 52px;
+          color: $terms-services-color;
+          font-weight: 400;
+        }
+
+        &__link_termServices {
+          color: $terms-services-color;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+
+        .try-now-form {
+          width: 100%;
+
+          &__text::before {
+            content: url("../assets/images/arrow.png");
+            position: absolute;
+            left: 0;
+            top: 35%;
+            width: 56px;
+            height: 41px;
+          }
+        }
+
+        .try-now-button {
+          width: 258px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  &__partners-logos {
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 965px;
+    width: 100%;
+    padding: 0 15px;
+  }
+}
