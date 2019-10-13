@@ -9,6 +9,7 @@
   }
 
   &_right-bottom-bg-triangle {
+    opacity: 0.8;
     left: 60%;
     bottom: 0;
     display: flex;
@@ -38,6 +39,7 @@
   }
 
   &_left-bottom-triangle {
+    opacity: 0.8;
     left: 0;
     bottom: 0;
     display: flex;
@@ -84,6 +86,7 @@
   }
 
   &_footer-triangle {
+    opacity: 0.8;
     bottom: 0;
     left:77%;
     overflow: hidden;
