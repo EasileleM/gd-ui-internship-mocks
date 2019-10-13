@@ -9,6 +9,7 @@
   &__label {
     padding: 0;
     margin: 0;
+    max-width: 100%;
     font-family: $primary-font;
     font-size: $font-size-small;
     font-weight: 500;
@@ -21,6 +22,7 @@
   &__header {
     padding: 0;
     margin: 0;
+    max-width: 100%;
     word-wrap: break-word;
     -ms-word-wrap: break-word;
     font-family: $primary-font;
@@ -38,6 +40,7 @@
   &__text {
     padding: 0;
     margin: 0;
+    max-width: 100%;
     word-wrap: break-word;
     -ms-word-wrap: break-word;
     font-family: $primary-font;
@@ -67,6 +70,7 @@
   &__sub-text-block {
     display: flex;
     flex-direction: column;
+    flex-basis: 342px;
     max-width: 342px;
   }
 

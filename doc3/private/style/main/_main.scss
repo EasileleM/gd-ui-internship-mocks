@@ -22,6 +22,9 @@
 
     &_first {
       height: 724px;
+      .main__block {
+        justify-content: flex-start;
+      }
       .text-block {
         margin-right: auto;
         max-width: 60%;
@@ -70,8 +73,8 @@
     &_third {
       height: 550px;
       .main__block {
-        flex-direction: row;
-        justify-content: flex-end;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
       }
       .text-block {
         align-self: center;
@@ -97,6 +100,7 @@
       }
       .text-block {
         width: 100%;
+        padding: 0 30px;
 
         &__label {
           margin-top: -24px;
