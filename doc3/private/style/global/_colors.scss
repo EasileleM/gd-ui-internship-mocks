@@ -16,8 +16,8 @@ $main-page-bg-color: $tertiary-color;
 $play-button-color-first: $quinary-color;
 $play-button-color-second: $denary-color;
 
-$try-now-button-bg-color: $secondary-color;
-$try-now-button-text-color: $tertiary-color;
+$registration-button-bg-color: $secondary-color;
+$registration-button-text-color: $tertiary-color;
 
 $text-block-label-color: $secondary-color;
 $text-block-header-color: $primary-color;
@@ -34,11 +34,19 @@ $founders-primary-text-color: $tertiary-color;
 
 $safary-bg-color: $nonary-color;
 
-$try-now-input-bg-color: #454d74;
-$try-now-input-border-color: #9a9ab8;
-$try-now-text-color: $tertiary-color;
-$try-now-block-bg: $quinary-color;
+$registration-input-bg-color: #454d74;
+$registration-input-border-color: #9a9ab8;
+$registration-text-color: $tertiary-color;
+$registration-block-bg: $quinary-color;
+$registration-form-header-color:$tertiary-color;
 
 $terms-services-color: $quaternary-color;
 
 $founders-block-background: #000000;
+
+$footer-text-color: $primary-color;
+$footer-main-header-color: #2c2f49;
+$footer-sub-main-header-color: $tertiary-color;
+$footer-input-bg: #f6f6f6;
+$footer-input-font-color: #bdc1c3;
+$footer-submit-button-color: $secondary-color;

@@ -19,7 +19,7 @@
       <button onclick="playPauseVideo();" class="play-button play-button_header">
         <div class="play-button__triangle"></div>
       </button>
-      <a href="#" class="try-now-button try-now-button_header">
+      <a href="#" class="registration-button registration-button_header">
         Try now
       </a>
       <p class="header__asterisk-text">* No need to add cards details</p>
@@ -27,7 +27,7 @@
 
     <main class="main">
       <div class="main__wrapper main__wrapper_first">
-        <div class="decorator decorator_first">
+        <div class="decorator decorator_right-bottom-bg-triangle ">
           <div class="decorator__triangle"></div>
         </div>
         <div class="main__block">
@@ -52,9 +52,9 @@
 
       <div class="main__wrapper main__wrapper_second">
         <div class="main__block">
-          <img loading="lazy" src="assets/images/stationery.png" alt="stationery" class="decorator decorator_second">
-          <img loading="lazy" src="assets/images/Earphones.png" alt="Earphones" class="decorator decorator_third">
-          <img loading="lazy" src="assets/images/Coffee_Cup.png" alt="Cup of coffe" class="decorator decorator_forth">
+          <img loading="lazy" src="assets/images/stationery.png" alt="stationery" class="decorator decorator_stationery">
+          <img loading="lazy" src="assets/images/Earphones.png" alt="Earphones" class="decorator decorator_earphones">
+          <img loading="lazy" src="assets/images/Coffee_Cup.png" alt="Cup of coffee" class="decorator decorator_coffee-cup">
           <div class="text-block">
             <p class="text-block__label">New features</p>
             <h2 class="text-block__header">Some awesone features</h2>
@@ -95,10 +95,10 @@
       </div>
 
       <div class="main__wrapper main__wrapper_third">
-        <div class="decorator decorator_fifth">
+        <div class="decorator decorator_left-bottom-triangle">
           <div class="decorator__triangle"></div>
         </div>
-        <img class="decorator decorator_sixth" src="assets/images/macbook.png" alt="macbook">
+        <img class="decorator decorator_macbook" src="assets/images/macbook.png" alt="macbook">
         <div class="main__block">
           <div class="text-block">
             <p class="text-block__label">New design</p>
@@ -116,8 +116,8 @@
         </div>
       </div>
 
-      <div class="main__wrapper main__wrapper_forth">
-        <div class="decorator decorator_seventh"></div>
+      <div class="main__wrapper main__wrapper_founders">
+        <div class="decorator decorator_founders-background"></div>
         <div class="main__block">
           <div class="text-block">
             <div class="text-block__sub-text-blocks">
@@ -166,8 +166,8 @@
 
       <div class="main__wrapper main__wrapper_fifth">
         <div class="main__block">
-          <img loading="lazy" src="assets/images/safary-blank.png" alt="safary" class="decorator decorator_eigth">
-          <div class="decorator decorator_nineth"></div>
+          <img loading="lazy" src="assets/images/safary-blank.png" alt="safary" class="decorator decorator_safary">
+          <div class="decorator decorator_safary-bg"></div>
           <div class="text-block">
             <p class="text-block__label">New features</p>
             <h2 class="text-block__header">Some awesone features</h2>
@@ -180,28 +180,75 @@
         </div>
       </div>
 
-      <div class="main__wrapper main__wrapper_sixth">
-          <div class="main__block">
-            <div class="text-block">
-              <p class="text-block__label">New features</p>
-              <h2 class="text-block__header">Over 1000 designers are using ...</h2>
-              <form action="try-now" method="post" class="try-now-form">
-                <input required type="text" class="try-now-form__input" placeholder="Full name">
-                <input required type="email" class="try-now-form__input" placeholder="Your email">
-                <input required type="password" class="try-now-form__input" placeholder="Password">
-                <div class="try-now-form__submit-button-wrapper">
-                  <p class="try-now-form__text">30 days free trial for all.</p>
-                  <button type="submit" class="try-now-button">Try now</button>
-                </div>
-              </form>
-              <p class="text-block__text text-block__text_termsServices">
-                  By Signing up you agree to our <a href="#" class="text-block__link_termServices">terms & Services</a>.
-              </p>
-            </div>
+      <div class="main__wrapper main__wrapper_registration-form">
+        <div class="main__block">
+          <div class="text-block">
+            <p class="text-block__label">New features</p>
+            <h2 class="text-block__header">Over 1000 designers are using ...</h2>
+            <form action="registration" method="post" class="registration-form">
+              <input required type="text" class="registration-form__input" placeholder="Full name">
+              <input required type="email" class="registration-form__input" placeholder="Your email">
+              <input required type="password" class="registration-form__input" placeholder="Password">
+              <div class="registration-form__submit-button-wrapper">
+                <p class="registration-form__text">30 days free trial for all.</p>
+                <button type="submit" class="registration-button">Try now</button>
+              </div>
+            </form>
+            <p class="text-block__text text-block__text_termsServices">
+              By Signing up you agree to our <a href="#" class="text-block__link_termServices">terms & Services</a>.
+            </p>
           </div>
         </div>
+      </div>
 
     </main>
+
+    <footer class="footer">
+      <div class="decorator decorator_footer-triangle">
+        <div class="decorator__triangle"></div>
+      </div>
+      <div class="footer__content">
+        <div class="footer__content-column">
+          <h2 class="footer__header footer__header_main">Start<span class="footer__header_main-sub">Ex</span> </h2>
+          <p class="footer__text">
+            Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+            USA & CAN: 1-888-123-4567
+            Address: 34 Brokel Rd. NY
+          </p>
+        </div>
+        <div class="footer__content-column">
+          <h2 class="footer__header">Support</h2>
+          <a href="#" class="footer__link">Help center</a>
+          <a href="#" class="footer__link">Get started</a>
+          <a href="#" class="footer__link">Contact Us</a>
+        </div>
+        <div class="footer__content-column">
+          <h2 class="footer__header">About US</h2>
+          <a href="#" class="footer__link">About Us</a>
+          <a href="#" class="footer__link">Terms of Use</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+        </div>
+        <div class="footer__content-column">
+          <h2 class="footer__header">Get newsletter</h2>
+          <form class="footer__form" method="POST">
+            <input required placeholder="email" type="email" class="footer__input">
+            <button class="footer__submit">
+              <img src="assets/images/send.svg" alt="sumbit" class="footer__sumbit-image">
+            </button>
+          </form>
+          <div class="footer__follow-us">
+            <a href="#" class="footer__link"><img loading="lazy" src="assets/images/dribbble-logo.svg" alt="dribbble"
+                class="footer__follow-us-links"></a>
+            <a href="#" class="footer__link"><img loading="lazy" src="assets/images/facebook-logo.svg" alt="facebook"
+                class="footer__follow-us-links"></a>
+            <a href="#" class="footer__link"><img loading="lazy" src="assets/images/google-plus.svg" alt="google plus"
+                class="footer__follow-us-links"></a>
+            <a href="#" class="footer__link"><img loading="lazy" src="assets/images/twitter-logo.svg" alt="twitter"
+                class="footer__follow-us-links"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <script src="scripts/video.js"></script>

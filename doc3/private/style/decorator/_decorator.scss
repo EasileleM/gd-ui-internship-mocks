@@ -8,7 +8,7 @@
     height: 0;
   }
 
-  &_first {
+  &_right-bottom-bg-triangle {
     left: 60%;
     bottom: 0;
     display: flex;
@@ -24,20 +24,20 @@
     }
   }
 
-  &_second {
+  &_stationery {
     left: 6%;
   }
-  &_third {
+  &_earphones {
     top: -2%;
     right: 11%;
   }
 
-  &_forth {
+  &_coffee-cup {
     right: 4%;
     bottom: 0;
   }
 
-  &_fifth {
+  &_left-bottom-triangle {
     left: 0;
     bottom: 0;
     display: flex;
@@ -54,14 +54,14 @@
     }
   }
 
-  &_sixth {
+  &_macbook {
     right: 50.5%;
     align-self: center;
     width: 630px;
     height: 367px;
   }
 
-  &_seventh {
+  &_founders-background {
     left: 0;
     top: 0;
     opacity: 0.8;
@@ -70,16 +70,33 @@
     background-image: url("../assets/images/foundersAndPartnetsBack.png");
   }
 
-  &_eigth {
+  &_safary {
     bottom: 0;
     width: 820px;
     height: 375px;
   }
 
-  &_nineth {
+  &_safary-bg {
     bottom: 0;
     width: 768px;
     height: 322px;
     background-color: $safary-bg-color;
+  }
+
+  &_footer-triangle {
+    bottom: 0;
+    left:77%;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 335px;
+    width: 23%;
+    background-color: $decorator-triangle-color;
+
+    .decorator__triangle {
+      border-left: 362px solid $main-page-bg-color;
+      border-bottom: 362px solid $main-page-bg-color;
+      border-right: 362px solid transparent;
+      border-top: 362px solid transparent;
+    }
   }
 }

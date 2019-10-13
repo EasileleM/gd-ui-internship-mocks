@@ -1,6 +1,6 @@
 @import "../global/global";
 
-.try-now-button {
+.registration-button {
   transition: 400ms ease;
   display: inline-flex;
   justify-content: center;
@@ -8,7 +8,7 @@
   border-radius: 3px;
   outline: 0;
   border: 0;
-  background-color: $try-now-button-bg-color;
+  background-color: $registration-button-bg-color;
   cursor: pointer;
   font-family: $primary-font;
   font-size: $font-size-small;
@@ -16,7 +16,7 @@
   text-transform: uppercase;
   letter-spacing: 3.2px;
   text-decoration: none;
-  color: $try-now-button-text-color;
+  color: $registration-button-text-color;
 
   &:not(:active):hover{
     box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.54);
