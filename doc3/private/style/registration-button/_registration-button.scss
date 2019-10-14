@@ -31,6 +31,10 @@
     opacity: 0.5;
   }
 
+  &:disabled:active {
+    box-shadow: none;
+  }
+
   &:disabled:not(:active):hover {
     box-shadow: none;
   }

@@ -113,14 +113,13 @@
     font-size: $font-size-small;
     font-weight: 400;
     letter-spacing: 0.64px;
+    &::placeholder {
+      color: $footer-input-font-color;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
   }
-
-  &__input::placeholder {
-    color: $footer-input-font-color;
-    text-transform: uppercase;
-    opacity: 0.8;
-  }
-
+  
   .registration-button {
     position: absolute;
     right: 0;
