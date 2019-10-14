@@ -186,9 +186,9 @@
             <p class="text-block__label">New features</p>
             <h2 class="text-block__header">Over 1000 designers are using ...</h2>
             <form action="registration" method="post" class="registration-form">
-              <input required type="text" class="registration-form__input" placeholder="Full name">
-              <input required type="email" class="registration-form__input" placeholder="Your email">
-              <input required type="password" class="registration-form__input" placeholder="Password">
+              <input required oninput="inputIsValid(this);" type="text" class="registration-form__input" placeholder="Full name">
+              <input required oninput="inputIsValid(this);" type="email" class="registration-form__input" placeholder="Your email">
+              <input required oninput="inputIsValid(this);" type="password" class="registration-form__input" placeholder="Password">
               <div class="registration-form__submit-button-wrapper">
                 <p class="registration-form__text">30 days free trial for all.</p>
                 <button type="submit" class="registration-button">Try now</button>
@@ -231,8 +231,8 @@
         <div class="footer__content-column">
           <h2 class="footer__header">Get newsletter</h2>
           <form class="footer__form" method="POST">
-            <input required placeholder="email" type="email" class="footer__input">
-            <button class="footer__submit">
+            <input required oninput="inputIsValid(this);" placeholder="email" type="email" class="footer__input">
+            <button class="registration-button">
               <img src="assets/images/send.svg" alt="sumbit" class="footer__sumbit-image">
             </button>
           </form>
@@ -252,6 +252,7 @@
   </div>
 
   <script src="scripts/video.js"></script>
+  <script src="scripts/registation-form-button-disable.js"></script>
 </body>
 
 </html>

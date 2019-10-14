@@ -16,7 +16,6 @@
     overflow: hidden;
     width: 40%;
     background: $decorator-triangle-color;
-
     .decorator__triangle {
       border-left: 362px solid $decorator-triangle-bg-color;
       border-top: 362px solid $decorator-triangle-bg-color;
@@ -71,6 +70,7 @@
     width: 100%;
     height: 100%;
     background-image: url("../assets/images/foundersAndPartnetsBack.png");
+    background-repeat: repeat;
   }
 
   &_safary {

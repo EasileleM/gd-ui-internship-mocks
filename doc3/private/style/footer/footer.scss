@@ -121,23 +121,12 @@
     opacity: 0.8;
   }
 
-  &__submit {
+  .registration-button {
     position: absolute;
     right: 0;
     top: 0;
-    transition: 200ms ease;
-    border-radius: 3px;
-    border: 0;
     height: 100%;
     width: 52px;
-    box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
-    background-color: $footer-submit-button-color;
-    cursor: pointer;
-
-    &:hover {
-      box-shadow: 1px 4px 5px rgba(14, 15, 15, 0.35);
-      opacity: 0.95;
-    }
   }
 
   &__follow-us {

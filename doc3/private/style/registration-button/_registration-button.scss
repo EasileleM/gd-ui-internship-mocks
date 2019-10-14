@@ -26,6 +26,15 @@
     box-shadow: inset 10px 10px 35px -4px rgba(0,0,0,0.54);
   }
 
+  &:disabled {
+    cursor: unset;
+    opacity: 0.5;
+  }
+
+  &:disabled:not(:active):hover {
+    box-shadow: none;
+  }
+
   &_header {
     z-index: 1;
     margin-top: 39px;
