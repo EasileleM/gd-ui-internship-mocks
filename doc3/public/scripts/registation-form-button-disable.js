@@ -1,23 +1,33 @@
-const formButtonsContainers = Array.prototype.map.call(document.getElementsByClassName('registration-button'),
-(button) => {
-  const buttonContainer = {button};
-  let parentElement = button.parentElement;
-  while (parentElement && parentElement.tagName.toLowerCase() != 'form') {
-    parentElement = parentElement.parentElement;
-  }
-  if (!parentElement) {
-    return buttonContainer;
-  }
-  buttonContainer.inputs = parentElement.getElementsByTagName('input');
-  buttonContainer.validInputCounter = 0;
-  buttonContainer.inputValidity = Array.prototype.map.call(buttonContainer.inputs, ((input) => {
-    let currentInputValidity = input.checkValidity();
-    currentInputValidity && buttonContainer.validInputCounter++;
-    return currentInputValidity;
-  }));
-  return buttonContainer;
-});
-formButtonsContainers.forEach((buttonContainer) => changeButtonState(buttonContainer.button));
+const formButtonsContainers = Array
+  .prototype
+  .map
+  .call(document.getElementsByClassName('registration-button'),
+    (button) => {
+      const buttonContainer = { button };
+
+      let parentElement = button.parentElement;
+      while (parentElement && parentElement.tagName.toLowerCase() != 'form') {
+        parentElement = parentElement.parentElement;
+      }
+      if (!parentElement) {
+        return buttonContainer;
+      }
+
+      buttonContainer.inputs = parentElement.getElementsByTagName('input');
+      buttonContainer.validInputCounter = 0;
+      buttonContainer.inputValidity = Array
+        .prototype
+        .map
+        .call(buttonContainer.inputs, ((input) => {
+          let currentInputValidity = input.checkValidity();
+          currentInputValidity && buttonContainer.validInputCounter++;
+          return currentInputValidity;
+        }));
+      
+      return buttonContainer;
+    });
+formButtonsContainers
+  .forEach((buttonContainer) => changeButtonState(buttonContainer.button));
 
 function inputIsValid(input) {
   let parentElement = input.parentElement;
@@ -25,26 +35,29 @@ function inputIsValid(input) {
     parentElement = input.parentElement;
   }
   const currentButton = parentElement.getElementsByClassName('registration-button')[0];
-  const currentButtonContainer = formButtonsContainers.find((buttonContainer) => buttonContainer.button === currentButton);
-  const currentInputValidityIndex = Array.prototype.indexOf.call(currentButtonContainer.inputs, input);
-  const currentInputValidity = input.checkValidity();
-  if (!currentButtonContainer.inputValidity[currentInputValidityIndex] && currentInputValidity) {
-    currentButtonContainer.validInputCounter++;
-  } else if (currentButtonContainer.inputValidity[currentInputValidityIndex] && !currentInputValidity){
-    currentButtonContainer.validInputCounter--;
+  const currButtonContainer = formButtonsContainers
+    .find((buttonContainer) => buttonContainer.button === currentButton);
+  const currInputValidityIndex = Array.prototype.indexOf
+    .call(currButtonContainer.inputs, input);
+  const currInputValidity = input.checkValidity();
+  if (!currButtonContainer.inputValidity[currInputValidityIndex] && currInputValidity) {
+    currButtonContainer.validInputCounter++;
+  } else if (currButtonContainer.inputValidity[currInputValidityIndex] && !currInputValidity) {
+    currButtonContainer.validInputCounter--;
   }
-  currentButtonContainer.inputValidity[currentInputValidityIndex] = currentInputValidity;
-  changeButtonState(currentButtonContainer.button);
+  currButtonContainer.inputValidity[currInputValidityIndex] = currInputValidity;
+  changeButtonState(currButtonContainer.button);
 }
 
 function changeButtonState(button) {
-  const currentButtonContainer = formButtonsContainers.find((buttonContainer) => buttonContainer.button === button);
-  if (!currentButtonContainer.inputs) {
+  const currButtonContainer = formButtonsContainers
+    .find((buttonContainer) => buttonContainer.button === button);
+  if (!currButtonContainer.inputs) {
     return;
   }
-  if (currentButtonContainer.validInputCounter == currentButtonContainer.inputs.length) {
-    currentButtonContainer.button.removeAttribute("disabled");
+  if (currButtonContainer.validInputCounter == currButtonContainer.inputs.length) {
+    currButtonContainer.button.removeAttribute("disabled");
   } else {
-    currentButtonContainer.button.setAttribute("disabled", "");
+    currButtonContainer.button.setAttribute("disabled", "");
   }
 }
