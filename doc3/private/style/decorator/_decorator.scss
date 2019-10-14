@@ -15,7 +15,7 @@
     display: flex;
     overflow: hidden;
     width: 40%;
-    background: $decorator-triangle-color;
+    background: linear-gradient(90deg, $decorator-triangle-bg-color 1px, $decorator-triangle-color 0%);
     .decorator__triangle {
       border-left: 362px solid $decorator-triangle-bg-color;
       border-top: 362px solid $decorator-triangle-bg-color;
@@ -48,8 +48,7 @@
     justify-content: flex-end;
     overflow: hidden;
     width: 43%;
-    background-color: $decorator-triangle-color;
-
+    background: linear-gradient(to left, #ffffff 1px, #ff6d6d 0%);
     .decorator__triangle {
       border-right: 362px solid $main-page-bg-color;
       border-top: 362px solid $main-page-bg-color;
@@ -96,7 +95,7 @@
     box-sizing: border-box;
     height: 335px;
     width: 23%;
-    background-color: $decorator-triangle-color;
+    background: linear-gradient(90deg, $main-page-bg-color 1px, $decorator-triangle-color 0%);
 
     .decorator__triangle {
       border-left: 362px solid $main-page-bg-color;
