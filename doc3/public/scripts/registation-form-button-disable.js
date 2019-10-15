@@ -6,7 +6,7 @@ for (const form of documentForms) {
 }
 
 function formIsValid(input) {
-  const currentForm = documentForms[input.getAttribute("form")];
+  const currentForm = input.form;
   const currentSumbitButton = currentForm.getElementsByTagName("button")[0];
   if (currentForm.checkValidity()) {
     currentSumbitButton.removeAttribute("disabled");

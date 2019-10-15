@@ -187,16 +187,16 @@
           <div class="text-block">
             <p class="text-block__label">New features</p>
             <h2 class="text-block__header">Over 1000 designers are using ...</h2>
-            <form id="registrationFrom" action="registration" method="post" class="registration-form">
-              <input form="registrationFrom" required oninput="formIsValid(this);" type="text" class="registration-form__input"
+            <form action="registration" method="post" class="registration-form">
+              <input required oninput="formIsValid(this);" type="text" class="registration-form__input"
                 placeholder="Full name">
-              <input form="registrationFrom" required oninput="formIsValid(this);" type="email" class="registration-form__input"
+              <input required oninput="formIsValid(this);" type="email" class="registration-form__input"
                 placeholder="Your email">
-              <input form="registrationFrom" required oninput="formIsValid(this);" type="password" class="registration-form__input"
+              <input required oninput="formIsValid(this);" type="password" class="registration-form__input"
                 placeholder="Password">
               <div class="registration-form__submit-button-wrapper">
                 <p class="registration-form__text">30 days free trial for all.</p>
-                <button disabled form="registrationFrom" type="submit" class="registration-button">Try now</button>
+                <button disabled type="submit" class="registration-button">Try now</button>
               </div>
             </form>
             <p class="text-block__text text-block__text_termsServices">
@@ -235,9 +235,9 @@
         </div>
         <div class="footer__content-column">
           <h2 class="footer__header">Get newsletter</h2>
-          <form id="footerForm" class="footer__form" method="POST">
-            <input form="footerForm" required oninput="formIsValid(this);" placeholder="email" type="email" class="footer__input">
-            <button disabled form="footerForm" class="registration-button" type="submit">
+          <form class="footer__form" method="POST">
+            <input required oninput="formIsValid(this);" placeholder="email" type="email" class="footer__input">
+            <button disabled class="registration-button" type="submit">
               <img src="assets/images/send.svg" alt="sumbit" class="footer__sumbit-image">
             </button>
           </form>
