@@ -3,7 +3,6 @@
 .main {
   overflow: hidden;
   display: flex;
-  align-items: stretch;
   flex-direction: column;
 
   &__block {
@@ -20,11 +19,13 @@
     display: flex;
     justify-content: center;
 
-    &_first {
+    &_content-left {
       height: 724px;
+
       .main__block {
         justify-content: flex-start;
       }
+
       .text-block {
         margin-right: auto;
         max-width: 60%;
@@ -46,7 +47,7 @@
       }
     }
 
-    &_second {
+    &_content-stretch {
       height: 670px;
       background-color: $main-wrapper-sub-background;
 
@@ -70,7 +71,7 @@
       }
     }
 
-    &_third {
+    &_content-right {
       height: 550px;
       .main__block {
         flex-direction: row-reverse;
@@ -80,9 +81,11 @@
         align-self: center;
         margin-right: 100px;
         max-width: 40%;
+
         &__label {
           align-self: flex-start;
         }
+
         &__header {
           margin-bottom: 36px;
         }
@@ -135,7 +138,7 @@
       }
     }
 
-    &_fifth {
+    &_content-center {
       height: 754px;
       background-color: $main-wrapper-sub-background;
 

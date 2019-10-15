@@ -18,6 +18,7 @@
     margin-top: 0;
     margin-bottom: 43px;
     width: 800px;
+    text-align: center;
     font-weight: 100;
     line-height: 75px;
     letter-spacing: 2.4px;
@@ -25,7 +26,6 @@
     -ms-word-wrap: break-word;
     font-size: $font-size-extremely-large;
     font-family: $primary-font;
-    text-align: center;
     color: $header-text-color;
   }
 
@@ -39,6 +39,38 @@
     font-weight: 400;
     line-height: 75px;
     letter-spacing: 0.56px;
+  }
+
+  &__link {
+    z-index: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms ease;
+    margin-top: 39px;
+    margin-bottom: 19px;
+    border-radius: 3px;
+    border: 0;
+    width: 190px;
+    height: 50px;
+    outline: 0;
+    background-color: $registration-button-bg-color;
+    cursor: pointer;
+    font-family: $primary-font;
+    font-size: $font-size-small;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    text-decoration: none;
+    color: $registration-button-text-color;
+
+    &:active {
+      box-shadow: inset 10px 10px 35px -4px rgba(0,0,0,0.54);
+    }
+
+    &:not(:active):hover{
+      box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.54);
+    }
   }
 
   &__video {

@@ -38,12 +38,4 @@
   &:disabled:not(:active):hover {
     box-shadow: none;
   }
-
-  &_header {
-    z-index: 1;
-    margin-top: 39px;
-    margin-bottom: 19px;
-    width: 190px;
-    height: 50px;
-  }
 }
