@@ -1,0 +1,11 @@
+@import "../variables/variables.scss";
+
+.main {
+  @include flex(center, center, column);
+
+  &__wrapper {
+    @include flex(normal, center, column);
+    max-width: $max-page-width;
+    width: 100%;
+  }
+}

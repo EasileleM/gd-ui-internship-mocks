@@ -1,0 +1,13 @@
+@import "mixins/mixins.scss";
+
+html {
+  scroll-behavior: smooth;
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+}
+
+body {
+  @include flex(normal, stretch, column);
+  width: 100%;
+  min-height: 100vh;
+}

@@ -1,0 +1,23 @@
+@import "../variables/typography.scss";
+@mixin typography(
+  $font-size: $default-font-size,
+  $font-family: $default-font,
+  $line-height: $default-line-height,
+  $font-weight: 400,
+  $text-transform: none,
+  $color: $default-text-color
+) {
+  font-size: $font-size;
+  font-family: $font-family;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  text-transform: $text-transform;
+  color: $color;
+}
+
+@mixin flex($justify-content: normal, $align-items: normal, $flex-direction: row, $flex-wrap: nowrap) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-flow: $flex-direction $flex-wrap;
+}

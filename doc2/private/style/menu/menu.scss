@@ -1,0 +1,42 @@
+@import "../mixins/mixins.scss";
+.menu {
+  @include flex(space-between, center);
+  width: 573px;
+  
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__link {
+    @include typography();
+    transition: 200ms ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    @media screen and (max-width: $medium) {
+      display: none;
+      line-height: $default-line-height + 6px;
+      font-size: $default-font-size + 16px;
+    }
+
+    &:hover {
+      color: $header-link-color-hover;
+    }
+  }
+
+  &__button {
+    @include typography($menu-open-button-font-size, $menu-button-font, normal, $color: $header-page-name);
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    @media screen and (max-width: $medium) {
+      display: block;
+    }
+    &:after {
+      content: attr(data-closed);
+      margin-right: -2px;
+    }
+  }
+}

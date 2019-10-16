@@ -1,0 +1,20 @@
+@import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
+.load-more {
+  @include flex();
+  padding-top: 45px;
+
+  &__button {
+    @include typography($load-more-font-size, $line-height: normal);
+    transition: 200ms ease;
+    margin: 0 auto;
+    border: 1px solid $default-text-color;
+    padding: 21px 34px;
+    background-color: $load-more-button-background;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
