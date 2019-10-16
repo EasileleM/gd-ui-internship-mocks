@@ -1,0 +1,105 @@
+@import "../global/global";
+
+.decorator {
+  position: absolute;
+
+  &__triangle {
+    width: 0;
+    height: 0;
+  }
+
+  &_right-bottom-bg-triangle {
+    opacity: 0.8;
+    left: 60%;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+    width: 40%;
+    background: linear-gradient(90deg, $decorator-triangle-bg-color 1px, $decorator-triangle-color 0%);
+    .decorator__triangle {
+      border-left: 362px solid $decorator-triangle-bg-color;
+      border-top: 362px solid $decorator-triangle-bg-color;
+      border-right: 362px solid transparent;
+      border-bottom: 362px solid transparent;
+    }
+  }
+
+  &_stationery {
+    left: 6%;
+  }
+  
+  &_earphones {
+    top: -2%;
+    right: 11%;
+  }
+
+  &_coffee-cup {
+    right: 4%;
+    bottom: 0;
+  }
+
+  &_left-bottom-triangle {
+    opacity: 0.8;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 43%;
+    background: linear-gradient(to left, #ffffff 1px, #ff6d6d 0%);
+    .decorator__triangle {
+      border-right: 362px solid $main-page-bg-color;
+      border-top: 362px solid $main-page-bg-color;
+      border-left: 362px solid transparent;
+      border-bottom: 362px solid transparent;
+    }
+  }
+
+  &_macbook {
+    top: 93px;
+    right: 50.5%;
+    width: 630px;
+    height: 367px;
+  }
+
+  &_founders-background {
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/foundersAndPartnetsBack.png");
+    background-repeat: repeat;
+  }
+
+  &_safary {
+    bottom: 0;
+    width: 820px;
+    height: 375px;
+  }
+
+  &_safary-bg {
+    bottom: 0;
+    width: 768px;
+    height: 322px;
+    background-color: $safary-bg-color;
+  }
+
+  &_footer-triangle {
+    opacity: 0.8;
+    bottom: 0;
+    left:77%;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 335px;
+    width: 23%;
+    background: linear-gradient(90deg, $main-page-bg-color 1px, $decorator-triangle-color 0%);
+
+    .decorator__triangle {
+      border-left: 362px solid $main-page-bg-color;
+      border-bottom: 362px solid $main-page-bg-color;
+      border-right: 362px solid transparent;
+      border-top: 362px solid transparent;
+    }
+  }
+}

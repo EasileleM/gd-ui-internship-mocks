@@ -1,0 +1,41 @@
+@import "../global/global";
+
+.registration-button {
+  transition: 400ms ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  outline: 0;
+  border: 0;
+  background-color: $registration-button-bg-color;
+  cursor: pointer;
+  font-family: $primary-font;
+  font-size: $font-size-small;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  text-decoration: none;
+  color: $registration-button-text-color;
+
+  &:not(:active):hover{
+    box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.54);
+  }
+
+  &:active {
+    box-shadow: inset 10px 10px 35px -4px rgba(0,0,0,0.54);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:disabled:active {
+    box-shadow: none;
+  }
+
+  &:disabled:not(:active):hover {
+    box-shadow: none;
+  }
+}
