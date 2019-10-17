@@ -1,0 +1,80 @@
+@import "../global/global";
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &_compact {
+    width: 360px;
+
+    .form__button {
+      border-radius: 0 0 3px 3px;
+      height: 54px;
+    }
+
+    .form__header {
+      border-radius: 3px 3px 0 0;
+      height: 54px;
+    }
+
+    .form__inputs-wrapper {
+      padding: 0 24px 49px 24px;
+    }
+
+    .form__input {
+      margin-top: 36px;
+    }
+  }
+
+  &__inputs-wrapper {
+    background-color: $form-inputs-wrapper-bg;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    border: 0;
+    border-bottom: 1px solid $form-input-color;
+    padding: 10px 15px;
+    outline: 0;
+    color: $form-input-color;
+    font: 400 $font-size-very-small $primary-font;
+  }
+
+  &__input::placeholder {
+    color: $form-input-color;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: 3px 3px 0 0;
+    background-color: $form-header-bg-color;
+    color: $form-header-color;
+    font: 700 $font-size-medium $primary-font;
+  }
+
+  &__header-label {
+    color: $form-header-label-color;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    transition: 200ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: $form-button-bg-color;
+    text-decoration: none;
+    color: $form-button-text-color;
+    font: 400 $font-size-button $primary-font;
+    border: 0;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}

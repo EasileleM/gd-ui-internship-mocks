@@ -1,0 +1,29 @@
+@import "../global/global";
+
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    max-width: 490px;
+    width: 100%;
+    padding: 0 20px;
+    list-style-type: none;
+  }
+
+  &__link {
+    opacity: 0.69;
+    transition: 200ms ease;
+    text-decoration: none;
+    color: $header-links-color;
+    font: 400 $font-size-small $primary-font;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}

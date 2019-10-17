@@ -1,0 +1,35 @@
+.section {
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    padding: 0px 50px;
+
+    &_small-vertical-pads {
+      padding: 22px 50px;
+    }
+
+    &_big-vertical-pads {
+      padding: 100px 50px;
+    }
+  }
+
+  &_flex-grow {
+    flex-grow: 1;
+  }
+
+  &_shadow-bottom {
+    box-shadow: 0 3px 2px -2px $section-shadow-color;
+  }
+
+  &_bg-buildings-1 {
+    background: rgb(0, 0, 0, 0.95);
+    background-image: url(../assets/images/bg-buildings-1.png);
+    background-size: cover;
+  }
+}
