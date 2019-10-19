@@ -2,5 +2,16 @@
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
+  padding: 0;
+  margin: 0;
   list-style: none;
+
+  &__small {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  &__link:hover {
+    opacity: 0.8;
+  }
 }

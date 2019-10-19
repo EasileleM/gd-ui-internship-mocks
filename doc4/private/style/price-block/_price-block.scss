@@ -1,0 +1,80 @@
+@import "../global/global";
+
+.price-block {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-bottom: 1px solid $price-block-header-color;
+    height: 59px;
+    background: $price-block-text-bg-color;
+    color: $price-block-header-color;
+    font: 700 $font-size-large $primary-font;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+    height: 100px;
+    background: $price-block-text-bg-color;
+    font: 700 $font-size-extremely-large $secondary-font;
+    color: $price-block-price-color;
+  }
+
+  &__price-money-sign {
+    margin-bottom: 15px;
+    font-size: $font-size-money-sign;
+  }
+
+  &__price-duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: $price-block-text-bg-color;
+    height: 51px;
+    color: $price-block-price-duration-color;
+    font: 400 $font-size-small $primary-font;
+    font-style: italic;
+  }
+
+  &__pricing-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    border-top: 5px solid $price-block-label-bg-color;
+    padding: 0;
+    height: 247px;
+    list-style: none;
+  }
+
+  &__price-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-top: 5px solid $price-block-label-bg-color;
+    height: 30px;
+    background-color: $price-block-label-bg-color;
+    font: 700 $font-size-small $primary-font;
+    color: $price-block-label-color;
+  }
+
+  &__pricing-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: $price-block-pricing-feature-bg;
+    color: $price-block-pricing-feature-color;
+    font: 400 $font-size-small $primary-font;
+    text-transform: uppercase;
+  }
+}

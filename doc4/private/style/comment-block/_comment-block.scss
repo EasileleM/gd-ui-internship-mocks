@@ -1,0 +1,54 @@
+@import "../global/global";
+
+.comment-block {
+  max-width: 273px;
+  text-align: left;
+
+  &_position-center {
+    margin: 0 20px;
+  }
+
+  &__text {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 24px;
+    border-radius: 3px;
+    padding: 24px 12px;
+    background-color: $comment-block-text-bg;
+    color: $comment-block-text-color;
+    font: 400 $font-size-small $primary-font;
+    font-style: italic;
+  }
+
+  &__text::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 9px;
+    border: 10px solid transparent;
+    border-top: 15px solid $comment-block-text-bg;
+    border-bottom: 0;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+  }
+
+  &__author-info {
+    margin-left: 15px;
+  }
+
+  &__author-name {
+    margin: 0;
+    font: 700 $font-size-large $primary-font;
+    color: $comment-block-author-name-color;
+  }
+
+  &__author-position {
+    margin: 0;
+    font: 400 $font-size-small $primary-font;
+    color: $comment-block-author-position-color;
+  }
+}

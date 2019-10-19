@@ -26,6 +26,40 @@
     }
   }
 
+  &_large {
+    width: 100%;
+
+    .form__button {
+      align-self: center;
+      border-radius: 0 0 3px 3px;
+      width: 148px;
+      height: 46px;
+    }
+
+    .form__header {
+      border-radius: 3px 3px 0 0;
+      height: 54px;
+    }
+
+    .form__inputs-wrapper {
+      flex-wrap: wrap;
+      align-content: stretch;
+      margin-bottom: 43px;
+      max-height: 250px;
+    }
+
+    .form__input {
+      margin-top: 36px;
+      max-width: 500px;
+      &_large {
+        position: relative;
+        margin-left: 67px;
+        height: 165px;
+        resize: none;
+      }
+    }
+  }
+
   &__inputs-wrapper {
     background-color: $form-inputs-wrapper-bg;
     display: flex;

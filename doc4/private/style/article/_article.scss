@@ -1,20 +1,34 @@
 @import "../global/global";
 
 .article {
+  align-self: stretch;
   display: flex;
   flex-direction: column;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
 
-  &_width-wide {
-    width: 100%;
+  &_content-center {
+    align-items: center;
+    text-align: center;
   }
 
-  &_width-narrow {
+  &_width-full {
+    width: 100%;
+    
+    .article__sub-blocks {
+      width: 100%;
+    }
+  }
+
+  &_width-small {
     max-width: 360px;
   }
 
   &_width-medium {
+    max-width: 450px;
+  }
+
+  &_width-large {
     max-width: 520px;
   }
 
@@ -36,11 +50,8 @@
   &__header {
     margin: 0;
     font: 400 $font-size-very-large $secondary-font;
+    color: $article-header-primary-color;
     text-transform: uppercase;
-
-    &_primary-color {
-      color: $article-header-primary-color;
-    }
 
     &_secondary-color {
       color: $article-header-secondary-color;
@@ -50,21 +61,22 @@
   &__sub-header {
     margin: 0;
     color: $article-header-primary-color;
-    font: 700 $font-size-medium $primary-font;
+    font: 700 $font-size-large $primary-font;
   }
 
   &__text {
     margin: 0;
-
-    &_primary-type {
-      color: $article-primary-text-color;
-      font: 400 $font-size-small $primary-font;
-    }
+    color: $article-primary-text-color;
+    font: 400 $font-size-small $primary-font;
 
     &_secondary-type {
       opacity: 0.8;
       color: $article-secondary-text-color;
       font: 300 $font-size-medium $secondary-font;
+    }
+
+    &_margin-top {
+      margin-top: 26px;
     }
   }
 
@@ -73,11 +85,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 44px;
+    border: 2px solid $article-button-bordered-color;
+    width: 135px;
+    height: 42px;
     text-decoration: none;
     color: $article-button-text-color;
     font: 400 $font-size-button $primary-font;
 
     &_filled {
+      margin: 0;
       border-radius: 3px;
       border: 0;
       width: 121px;
@@ -85,11 +102,8 @@
       background-color: $article-button-filled-color;
     }
 
-    &_bordered {
-      margin-top: 44px;
-      border: 2px solid $article-button-bordered-color;
-      width: 135px;
-      height: 42px;
+    &_margin-top {
+      margin-top: 51px;
     }
 
     &:hover {
@@ -97,12 +111,25 @@
     }
   }
 
+  &__sub-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    &_margin-top-small {
+      margin-top: 46px;
+    }
+
+    &_content-row {
+      flex-direction: row;
+    }
+  }
+
   &__devider {
     width: 64px;
     margin: 30px 0 30px 2px;
-    &_primary-color {
-      border-top: 2px solid $article-devider-primary-color;
-    }
+    border-top: 2px solid $article-devider-primary-color;
 
     &_secondary-color {
       border-top: 2px solid $article-devider-secondary-color;
@@ -110,6 +137,18 @@
 
     &_empty {
       border: 0;
+    }
+  }
+
+  &__link {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    text-decoration: none;
+
+    &_position-center {
+      margin: 0 25px;
     }
   }
 }
