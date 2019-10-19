@@ -31,14 +31,9 @@
 
     .form__button {
       align-self: center;
-      border-radius: 0 0 3px 3px;
+      border-radius: 3px;
       width: 148px;
       height: 46px;
-    }
-
-    .form__header {
-      border-radius: 3px 3px 0 0;
-      height: 54px;
     }
 
     .form__inputs-wrapper {
@@ -54,7 +49,7 @@
       &_large {
         position: relative;
         margin-left: 67px;
-        height: 165px;
+        height: 171px;
         resize: none;
       }
     }
@@ -67,17 +62,24 @@
   }
 
   &__input {
+    transition: border 200ms ease;
     border: 0;
     border-bottom: 1px solid $form-input-color;
     padding: 10px 15px;
     outline: 0;
     color: $form-input-color;
-    font: 400 $font-size-very-small $primary-font;
+    font: 400 $font-size-small $primary-font;
+
+    &:valid {
+      border-bottom: 1px solid $form-button-bg-color;
+    }
+  
+    &::placeholder {
+      color: $form-input-color;
+    }
   }
 
-  &__input::placeholder {
-    color: $form-input-color;
-  }
+  
 
   &__header {
     display: flex;
@@ -87,7 +89,7 @@
     border-radius: 3px 3px 0 0;
     background-color: $form-header-bg-color;
     color: $form-header-color;
-    font: 700 $font-size-medium $primary-font;
+    font: 700 $font-size-large $primary-font;
   }
 
   &__header-label {
@@ -102,13 +104,21 @@
     align-items: center;
     cursor: pointer;
     background-color: $form-button-bg-color;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
     text-decoration: none;
     color: $form-button-text-color;
     font: 400 $font-size-button $primary-font;
     border: 0;
 
     &:hover {
-      opacity: 0.85;
+      opacity: 0.95;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    &:disabled {
+      opacity: 0.8;
+      cursor: not-allowed;
+      box-shadow: none;
     }
   }
 }

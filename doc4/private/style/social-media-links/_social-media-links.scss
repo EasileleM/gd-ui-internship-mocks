@@ -6,12 +6,19 @@
   margin: 0;
   list-style: none;
 
+  &_margin-left {
+    margin-left: 50px;
+  }
+
   &__small {
     width: 100%;
     max-width: 340px;
   }
 
-  &__link:hover {
-    opacity: 0.8;
+  &__link{
+    transition: opacity 200ms ease;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }

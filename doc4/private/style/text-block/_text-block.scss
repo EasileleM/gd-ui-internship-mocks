@@ -5,6 +5,10 @@
   justify-content: space-between;
   max-width: 450px;
 
+  &__wrapper {
+    max-width: 355px;
+  }
+
   &_margin-top-small {
     margin-top: 40px;
   }
@@ -22,7 +26,7 @@
 
   &__image {
     &_margin-bottom {
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
   }
 

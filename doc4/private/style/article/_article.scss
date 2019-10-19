@@ -7,6 +7,10 @@
   word-wrap: break-word;
   -ms-word-wrap: break-word;
 
+  &_tab-part {
+    display: none;
+  }
+
   &_content-center {
     align-items: center;
     text-align: center;
@@ -14,7 +18,7 @@
 
   &_width-full {
     width: 100%;
-    
+
     .article__sub-blocks {
       width: 100%;
     }
@@ -93,6 +97,11 @@
     color: $article-button-text-color;
     font: 400 $font-size-button $primary-font;
 
+    &:hover {
+      border: 2px solid $article-button-hover-color;
+      color: $article-button-hover-color;
+    }
+
     &_filled {
       margin: 0;
       border-radius: 3px;
@@ -100,15 +109,18 @@
       width: 121px;
       height: 46px;
       background-color: $article-button-filled-color;
+
+      &:hover {
+        border: 0;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        color: $article-button-text-color;
+      }
     }
 
     &_margin-top {
       margin-top: 51px;
     }
 
-    &:hover {
-      opacity: 0.7;
-    }
   }
 
   &__sub-blocks {
@@ -123,6 +135,10 @@
 
     &_content-row {
       flex-direction: row;
+    }
+
+    &_fixed-height {
+      height: 508px;
     }
   }
 
@@ -141,6 +157,7 @@
   }
 
   &__link {
+    transition: 200ms ease;
     align-self: flex-end;
     display: flex;
     flex-direction: column;
@@ -149,6 +166,11 @@
 
     &_position-center {
       margin: 0 25px;
+    }
+
+    &:hover {
+      box-shadow: 2px 22px 21px -6px rgba(0,0,0,0.13);
+      margin-bottom: 10px;
     }
   }
 }

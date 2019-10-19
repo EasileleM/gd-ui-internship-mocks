@@ -51,4 +51,10 @@
     font: 400 $font-size-small $primary-font;
     color: $comment-block-author-position-color;
   }
+
+  &__img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
 }
