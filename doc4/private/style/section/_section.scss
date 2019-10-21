@@ -6,6 +6,10 @@
     width: 100%;
     max-height: 500px;
 
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      height: 500px;
+    }
+
     @media screen and (max-width: $screen-medium-size) {
       max-height: none;
     }
