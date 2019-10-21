@@ -8,6 +8,11 @@
     margin-left: 20px;
     width: 360px;
 
+    @media screen and (max-width: $screen-medium-size){
+      margin-left: 0;
+      width: calc(100% - 50px);
+    }
+
     .form__button {
       border-radius: 0 0 3px 3px;
       height: 54px;
