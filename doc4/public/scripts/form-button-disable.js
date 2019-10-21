@@ -1,5 +1,5 @@
 const documentForms = document.forms;
-for (const form of documentForms) {
+for (let form of documentForms) {
   if (form.checkValidity()) {
     form.getElementsByTagName('button')[0].removeAttribute('disabled');
   }
