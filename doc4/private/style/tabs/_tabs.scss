@@ -15,8 +15,17 @@
   align-items: stretch;
   flex-wrap: wrap;
 
+  @media screen and (max-width: $screen-medium-size) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
   &__image {
     margin-left: 50px;
+
+    @media screen and (max-width: $screen-medium-size) {
+      margin-left: 0;
+    }
   }
 
   &__content-block {
@@ -29,6 +38,11 @@
     display: none;
     justify-content: space-between;
     width: 100%;
+
+    @media screen and (max-width: $screen-medium-size) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__input {
@@ -70,6 +84,18 @@
 
     &_bottom {
       border-radius: 0 0 3px 3px;
+    }
+
+    @media screen and (max-width: $screen-medium-size) {
+      margin: 0 1px 20px 1px;
+
+      &_top {
+        border-radius: 3px 0 0 3px;
+      }
+
+      &_bottom {
+        border-radius: 0 3px 3px 0;
+      }
     }
   }
 }

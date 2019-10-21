@@ -7,6 +7,16 @@
   word-wrap: break-word;
   -ms-word-wrap: break-word;
 
+  @media screen and (max-width: $screen-medium-size){
+    align-self: center;
+    margin-bottom: 40px;
+
+    &_adaptive-center {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
   &_tab-part {
     display: none;
   }
