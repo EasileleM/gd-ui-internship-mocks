@@ -54,9 +54,9 @@
           <form action="/registration" method="POST" name="registration-form" class="form form_compact">
             <h2 class="form__header"><span>Try Your <span class="form__header-label">Free</span> Trial Today</span></h2>
             <div class="form__inputs-wrapper">
-              <input pattern="[a-zA-Z]+" autocomplete="text" oninput="formIsValid(this)" required name="text"
+              <input pattern="[a-zA-Z]+" autocomplete="on" oninput="formIsValid(this)" required name="text"
                 placeholder="Name" type="text" class="form__input">
-              <input autocomplete="email" oninput="formIsValid(this)" required name="email" placeholder="Email"
+              <input autocomplete="on" oninput="formIsValid(this)" required name="email" placeholder="Email"
                 type="email" class="form__input">
               <input pattern="^(?=(.*[a-z]){1,})(?=(.*[A-Z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{6,}$"
                 oninput="formIsValid(this)" required name="password" placeholder="Password" type="password"
@@ -76,11 +76,11 @@
           <article class="article article_width-small article_adaptive-center">
             <h2 class="article__sub-header">
               Social Media
-              </h1>
-              <p class="article__text ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                euismod bibendum laoreet.
-              </p>
+            </h2>
+            <p class="article__text ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
           </article>
 
           <ul class="social-media-links social-media-links_margin-left">
@@ -161,7 +161,8 @@
                     euismod bibendum laoreet.
                   </p>
 
-                  <a download="coolFile" href="assets/downloads/modulepatterns.pdf" class="article__button article__button_filled article__button_margin-top">
+                  <a download="coolFile" href="assets/downloads/modulepatterns.pdf"
+                    class="article__button article__button_filled article__button_margin-top">
                     Download
                   </a>
                 </article>
@@ -217,7 +218,8 @@
                     bibendum laoreet.
                   </p>
 
-                  <a download="coolFile" href="assets/downloads/modulepatterns.pdf" class="article__button article__button_filled article__button_margin-top">
+                  <a download="coolFile" href="assets/downloads/modulepatterns.pdf"
+                    class="article__button article__button_filled article__button_margin-top">
                     Download
                   </a>
                 </article>
@@ -299,7 +301,8 @@
             </p>
           </article>
 
-          <img loading="lazy" height="375" width="525" src="assets/images/city-2.png" alt="City" class="section__image_adaptation-order">
+          <img loading="lazy" height="375" width="525" src="assets/images/city-2.png" alt="City"
+            class="section__image_adaptation-order">
         </div>
       </section>
 
@@ -346,7 +349,8 @@
 
               <div class="text-block text-block_content-column-center text-block_max-width-small">
                 <div class="text-block__image-wrapper text-block__image-wrapper_circle-large">
-                  <img loading="lazy" height="35" width="35" src="assets/images/lightning-bolt.svg" alt="lightning bolt">
+                  <img loading="lazy" height="35" width="35" src="assets/images/lightning-bolt.svg"
+                    alt="lightning bolt">
                 </div>
                 <div class="text-block__wrapper">
                   <h3 class="text-block__header text-block__header_big">Easy to Customize</h3>
@@ -529,11 +533,11 @@
             <div class="article__sub-blocks">
               <form action="/registration" method="POST" name="registration-form" class="form form_large">
                 <div class="form__inputs-wrapper">
-                  <input pattern="[a-zA-Z]+" autocomplete="text" oninput="formIsValid(this)" required name="text"
+                  <input pattern="[a-zA-Z]+" autocomplete="on" oninput="formIsValid(this)" required name="text"
                     placeholder="Name" type="text" class="form__input">
-                  <input autocomplete="email" oninput="formIsValid(this)" required name="email" placeholder="Email"
+                  <input autocomplete="on" oninput="formIsValid(this)" required name="email" placeholder="Email"
                     type="email" class="form__input">
-                  <input pattern="[a-zA-Z]+" autocomplete="subject" oninput="formIsValid(this)" required name="subject"
+                  <input pattern="[a-zA-Z]+" autocomplete="on" oninput="formIsValid(this)" required name="subject"
                     placeholder="Subject" type="text" class="form__input">
                   <textarea maxlength="250" oninput="formIsValid(this)" required name="text" placeholder="Message"
                     class="form__input form__input_large"></textarea>
