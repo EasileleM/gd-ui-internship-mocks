@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AXIT</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Raleway:300,400,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="app-wrapper">
+    <div class="app-wrapper__top-content">
+
+      <header class="header">
+        <div class="header__content">
+          <div class="header__wrapper-logo"><img width="79" height="27" loading="lazy" src="assets/images/logo.png"
+              alt="Axit" class="header__logo"></div>
+          <nav class="header__nav-wrapper header-nav">
+            <ul class="header-nav__items">
+              <li class="header-nav__item"><a href="#features" class="header-nav__link">Features</a></li>
+              <li class="header-nav__item"><a href="#about" class="header-nav__link">About</a></li>
+              <li class="header-nav__item"><a href="#pricing" class="header-nav__link">Pricing</a></li>
+              <li class="header-nav__item"><a href="#reviews" class="header-nav__link">Reviews</a></li>
+              <li class="header-nav__item"><a href="#contact" class="header-nav__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="section section_vertical-responsive section_bg-image-1">
+        <div class="section__content">
+          <article class="article article_width-large article_adaptive-center">
+            <div class="article__page-logo-wrapper">
+              <img width="175" height="60" loading="lazy" src="assets/images/logo.png" alt="Axit"
+                class="article__page-logo">
+            </div>
+            <h1 class="article__header article__header_secondary-color">
+              Modern axure template for beautiful prototypes
+            </h1>
+            <div class="article__devider article__devider_secondary-color"></div>
+            <p class="article__text article__text_secondary-type">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo.
+            </p>
+            <a download="coolFile" target="_blank" href="assets/downloads/modulepatterns.pdf" class="article__button">
+              Download
+            </a>
+          </article>
+
+          <form action="/registration" method="POST" name="registration-form" class="form form_compact">
+            <h2 class="form__header"><span>Try Your <span class="form__header-label">Free</span> Trial Today</span></h2>
+            <div class="form__inputs-wrapper">
+              <input pattern="[a-zA-Z]+" autocomplete="on" oninput="formIsValid(this)" required name="text"
+                placeholder="Name" type="text" class="form__input">
+              <input autocomplete="on" oninput="formIsValid(this)" required name="email" placeholder="Email"
+                type="email" class="form__input">
+              <input pattern="^(?=(.*[a-z]){1,})(?=(.*[A-Z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{6,}$"
+                oninput="formIsValid(this)" required name="password" placeholder="Password" type="password"
+                class="form__input">
+            </div>
+            <button disabled class="form__button">Get Started</button>
+          </form>
+        </div>
+      </section>
+
+    </div>
+
+
+    <main class="main">
+      <section class="section section_shadow-bottom">
+        <div class="section__content section__content_small-vertical-margins">
+          <article class="article article_width-small article_adaptive-center">
+            <h2 class="article__sub-header">
+              Social Media
+            </h2>
+            <p class="article__text ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+          </article>
+
+          <ul class="social-media-links social-media-links_margin-left">
+            <li class="social-media-links__items">
+              <a href="#" class="social-media-links__link-wrapper">
+                <img loading="lazy" height="48" width="48" src="assets/images/facebook-logo.svg" alt="Facebook"
+                  class="social-media-links__link">
+              </a>
+            </li>
+            <li class="social-media-links__items">
+              <a href="#" class="social-media-links__link-wrapper">
+                <img loading="lazy" height="48" width="48" src="assets/images/twitter-logo.svg" alt="Twitter"
+                  class="social-media-links__link">
+              </a>
+            </li>
+            <li class="social-media-links__items">
+              <a href="#" class="social-media-links__link-wrapper">
+                <img loading="lazy" height="48" width="48" src="assets/images/google-plus.svg" alt="Google Plus"
+                  class="social-media-links__link">
+              </a>
+            </li>
+            <li class="social-media-links__items">
+              <a href="#" class="social-media-links__link-wrapper">
+                <img loading="lazy" height="48" width="48" src="assets/images/pinterest-logo.svg" alt="Pinterest"
+                  class="social-media-links__link">
+              </a>
+            </li>
+            <li class="social-media-links__items">
+              <a href="#" class="social-media-links__link-wrapper">
+                <img loading="lazy" height="48" width="48" src="assets/images/instagram-logo.svg" alt="Instagram"
+                  class="social-media-links__link">
+              </a>
+            </li>
+            <li class="social-media-links__items">
+              <a href="#" class="social-media-links__link-wrapper">
+                <img loading="lazy" height="48" width="48" src="assets/images/stumbleupon-logo.svg" alt="Stumbleupon"
+                  class="social-media-links__link">
+              </a>
+            </li>
+            <li class="social-media-links__items">
+              <a href="#" class="social-media-links__link-wrapper">
+                <img loading="lazy" height="48" width="48" src="assets/images/rss-icon.svg" alt="Rss"
+                  class="social-media-links__link">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="features" class="section section_bg-color-1">
+        <div class="section__content">
+
+          <div class="tabs section__tabs">
+            <input checked id="tab1" type="radio" class="tabs__input tabs__input_1" name="tabs">
+            <label for="tab1" class="tabs__label tabs__label_top">Tab 1</label>
+
+            <input id="tab2" type="radio" class="tabs__input tabs__input_2" name="tabs">
+            <label for="tab2" class="tabs__label">Tab 2</label>
+
+            <input id="tab3" type="radio" class="tabs__input tabs__input_3" name="tabs">
+            <label for="tab3" class="tabs__label tabs__label_bottom">Tab 3</label>
+
+            <div class="tabs__content-block">
+              <div class="tabs__content tabs__content_1">
+                <article class="article article_width-medium article_adaptive-center">
+                  <h2 class="article__sub-header">
+                    Tabs with soft transitioning effect.
+                  </h2>
+                  <div class="article__devider article__devider_empty"></div>
+                  <p class="article__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+                    et.
+                  </p>
+                  <p class="article__text  article__text_margin-top">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet.
+                  </p>
+
+                  <a download="coolFile" target="_blank" href="assets/downloads/modulepatterns.pdf"
+                    class="article__button article__button_filled article__button_margin-top">
+                    Download
+                  </a>
+                </article>
+
+                <img loading="lazy" height="253" width="320" src="assets/images/skyscrapers.png" alt="City"
+                  class="tabs__image">
+              </div>
+
+              <div class="tabs__content tabs__content_2">
+                <article class="article article_width-medium article_adaptive-center">
+                  <h2 class="article__sub-header">
+                    These tabs are dope.
+                  </h2>
+                  <div class="article__devider article__devider_empty"></div>
+                  <p class="article__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+                    et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                    natoque penatibus et magnis dis parturient montes.
+                  </p>
+
+                  <p class="article__text  article__text_margin-top">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet.
+                  </p>
+
+                  <p class="article__text  article__text_margin-top">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet.
+                  </p>
+                </article>
+
+                <img loading="lazy" height="253" width="320" src="assets/images/skyscrapers.png" alt="City"
+                  class="tabs__image">
+              </div>
+
+              <div class="tabs__content tabs__content_3">
+                <article class="article article_width-medium article_adaptive-center">
+                  <h2 class="article__sub-header">
+                    Meaningless text.
+                  </h2>
+                  <div class="article__devider article__devider_empty"></div>
+                  <p class="article__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+                    et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                    natoque penatibus et magnis dis parturient montes.
+                  </p>
+                  <p class="article__text  article__text_margin-top">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet.
+                  </p>
+
+                  <a download="coolFile" target="_blank" href="assets/downloads/modulepatterns.pdf"
+                    class="article__button article__button_filled article__button_margin-top">
+                    Download
+                  </a>
+                </article>
+
+                <img loading="lazy" height="253" width="320" src="assets/images/skyscrapers.png" alt="City"
+                  class="tabs__image">
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__content">
+          <img loading="lazy" height="375" width="525" src="assets/images/city-1.png" alt="City" class="section__image">
+
+          <article class="article article_width-medium">
+            <h2 class="article__sub-header">
+              Sub list section
+            </h2>
+            <div class="article__devider"></div>
+            <p class="article__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo.
+            </p>
+
+            <div class="article__sub-blocks article__sub-blocks_margin-top-small">
+              <div class="text-block">
+                <div class="text-block__image-wrapper text-block__image-wrapper_circle-small">
+                  <img loading="lazy" height="18" width="14" src="assets/images/upload.svg" alt="Upload">
+                </div>
+                <div class="text-block__wrapper">
+                  <h3 class="text-block__header">Title</h3>
+                  <p class="text-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="text-block text-block_margin-top-small">
+                <div class="text-block__image-wrapper text-block__image-wrapper_circle-small">
+                  <img loading="lazy" height="18" width="14" src="assets/images/download.svg" alt="Download">
+                </div>
+                <div class="text-block__wrapper">
+                  <h3 class="text-block__header">Title</h3>
+                  <p class="text-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor
+                    sit amet lacus accumsan et viverra justo commodo.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section_bg-color-1">
+        <div class="section__content">
+          <article class="article article_width-medium">
+            <h2 class="article__sub-header">
+              Standard Picture Section
+            </h2>
+            <div class="article__devider "></div>
+            <p class="article__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+              et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+              natoque penatibus et magnis dis parturient montes.
+            </p>
+            <p class="article__text  article__text_margin-top">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+              bibendum laoreet.
+            </p>
+          </article>
+
+          <img loading="lazy" height="375" width="525" src="assets/images/city-2.png" alt="City"
+            class="section__image_adaptation-order">
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section__content">
+          <article class="article article_width-full article_content-center">
+            <h2 class="article__header">
+              Why this is awesome
+            </h2>
+            <div class="article__devider "></div>
+            <p class="article__text ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+            <div class="article__sub-blocks article__sub-blocks_content-row">
+              <div class="text-block text-block_content-column-center text-block_max-width-small">
+                <div class="text-block__image-wrapper text-block__image-wrapper_circle-large">
+                  <img class="text-block__image_margin-bottom" loading="lazy" height="40" width="40"
+                    src="assets/images/lightbulb.svg" alt="Light bulb">
+                </div>
+                <div class="text-block__wrapper">
+                  <h3 class="text-block__header text-block__header_big">Thoughtful Design</h3>
+                  <p class="text-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Aenean euismod bibendum laoreet. Proin gravida
+                    dolor sit amet lacus accumsan et viverra.
+                  </p>
+                </div>
+              </div>
+
+              <div class="text-block text-block_content-column-center text-block_max-width-small">
+                <div class="text-block__image-wrapper text-block__image-wrapper_circle-large">
+                  <img loading="lazy" height="35" width="35" src="assets/images/keyboard.svg" alt="Keyboard">
+                </div>
+                <div class="text-block__wrapper">
+                  <h3 class="text-block__header text-block__header_big">Well Crafted</h3>
+                  <p class="text-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Aenean euismod bibendum laoreet. Proin gravida
+                    dolor sit amet lacus accumsan et viverra.
+                  </p>
+                </div>
+              </div>
+
+              <div class="text-block text-block_content-column-center text-block_max-width-small">
+                <div class="text-block__image-wrapper text-block__image-wrapper_circle-large">
+                  <img loading="lazy" height="35" width="35" src="assets/images/lightning-bolt.svg"
+                    alt="lightning bolt">
+                </div>
+                <div class="text-block__wrapper">
+                  <h3 class="text-block__header text-block__header_big">Easy to Customize</h3>
+                  <p class="text-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Aenean euismod bibendum laoreet. Proin gravida
+                    dolor sit amet lacus accumsan et viverra.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section_bg-color-1" id="pricing">
+        <div class="section__content">
+          <article class="article article_width-full article_content-center">
+            <h2 class="article__header">
+              Pricing options
+            </h2>
+            <div class="article__devider "></div>
+            <p class="article__text ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+            <div class="article__sub-blocks article__sub-blocks_content-row article__sub-blocks_fixed-height">
+              <a href="#" class="article__link">
+                <div class="price-block">
+                  <h3 class="price-block__header">Basic</h3>
+                  <p class="price-block__price"><span class="price-block__price-money-sign">$</span>0</p>
+                  <p class="price-block__price-duration">Free for life</p>
+                  <ul class="price-block__pricing-features">
+                    <li class="price-block__pricing-feature">1gb of space</li>
+                    <li class="price-block__pricing-feature">10gb of bandwidth</li>
+                    <li class="price-block__pricing-feature">3 websites</li>
+                    <li class="price-block__pricing-feature">basic customization</li>
+                    <li class="price-block__pricing-feature">wordpress integration</li>
+                    <li class="price-block__pricing-feature">email support</li>
+                  </ul>
+                </div>
+              </a>
+
+
+              <a href="#" class="article__link article__link_position-center">
+                <div class="price-block">
+                  <h3 class="price-block__header">Professional</h3>
+                  <p class="price-block__price"><span class="price-block__price-money-sign">$</span>19</p>
+                  <p class="price-block__price-duration">Monthly Payment</p>
+                  <p class="price-block__price-label">Our most popular</p>
+                  <ul class="price-block__pricing-features">
+                    <li class="price-block__pricing-feature">5gb of space</li>
+                    <li class="price-block__pricing-feature">50gb of bandwidth</li>
+                    <li class="price-block__pricing-feature">12 websites</li>
+                    <li class="price-block__pricing-feature">advanced customization</li>
+                    <li class="price-block__pricing-feature">wordpress integration</li>
+                    <li class="price-block__pricing-feature">email support</li>
+                  </ul>
+                </div>
+              </a>
+
+
+              <a href="#" class="article__link">
+                <div class="price-block">
+                  <h3 class="price-block__header">Enterprise</h3>
+                  <p class="price-block__price"><span class="price-block__price-money-sign">$</span>70</p>
+                  <p class="price-block__price-duration">Monthly Payment</p>
+                  <ul class="price-block__pricing-features">
+                    <li class="price-block__pricing-feature">unlimited space</li>
+                    <li class="price-block__pricing-feature">unlimited bandwidth</li>
+                    <li class="price-block__pricing-feature">100 websites</li>
+                    <li class="price-block__pricing-feature">advanced customization</li>
+                    <li class="price-block__pricing-feature">wordpress integration</li>
+                    <li class="price-block__pricing-feature">24/7 customer support</li>
+                  </ul>
+                </div>
+              </a>
+
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="reviews">
+        <div class="section__content">
+          <article class="article article_width-full article_content-center">
+            <h2 class="article__header">
+              What our customers are saying
+            </h2>
+            <div class="article__devider"></div>
+            <p class="article__text ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+            <div class="article__sub-blocks article__sub-blocks_content-row">
+              <div class="comment-block">
+                <p class="comment-block__text">
+                  Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Doloribus
+                  accusamus expedita repellat similique
+                  odio aspernatur ex, architecto eaque
+                  quo suscipit.
+                </p>
+                <div class="comment-block__author">
+                  <img width="70" height="70" src="assets/images/avatar-1.png" alt="author" class="comment-block__img">
+                  <div class="comment-block__author-info">
+                    <h3 class="comment-block__author-name">Jeremy H.</h3>
+                    <p class="comment-block__author-position">Manager</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment-block comment-block_position-center">
+                <p class="comment-block__text">
+                  Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Doloribus
+                  accusamus expedita repellat similique
+                  odio aspernatur ex, architecto eaque
+                  quo suscipit.
+                </p>
+                <div class="comment-block__author">
+                  <img width="70" height="70" src="assets/images/avatar-1.png" alt="author" class="comment-block__img">
+                  <div class="comment-block__author-info">
+                    <h3 class="comment-block__author-name">John S.</h3>
+                    <p class="comment-block__author-position">Freelancer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment-block">
+                <p class="comment-block__text">
+                  Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Doloribus
+                  accusamus expedita repellat similique
+                  odio aspernatur ex, architecto eaque
+                  quo suscipit.
+                </p>
+                <div class="comment-block__author">
+                  <img width="70" height="70" src="assets/images/avatar-1.png" alt="author" class="comment-block__img">
+                  <div class="comment-block__author-info">
+                    <h3 class="comment-block__author-name">Susan W.</h3>
+                    <p class="comment-block__author-position">Photographer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section_bg-image-2">
+        <div class="section__content">
+          <article class="article article_width-full article_content-center">
+            <h2 class="article__header article__header_secondary-color">
+              Stylish axure design
+            </h2>
+            <div class="article__devider article__devider_secondary-color"></div>
+            <p class="article__text article__text_secondary-type">
+              Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
+            </p>
+            <a download="coolFile" target="_blank" href="assets/downloads/modulepatterns.pdf" class="article__button">
+              Download
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section__content">
+          <article class="article article_width-full article_content-center">
+            <h2 class="article__header">
+              Contact us
+            </h2>
+            <div class="article__devider"></div>
+            <p class="article__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+            <div class="article__sub-blocks">
+              <form action="/registration" method="POST" name="registration-form" class="form form_large">
+                <div class="form__inputs-wrapper">
+                  <input pattern="[a-zA-Z]+" autocomplete="on" oninput="formIsValid(this)" required name="text"
+                    placeholder="Name" type="text" class="form__input">
+                  <input autocomplete="on" oninput="formIsValid(this)" required name="email" placeholder="Email"
+                    type="email" class="form__input">
+                  <input pattern="[a-zA-Z]+" autocomplete="on" oninput="formIsValid(this)" required name="subject"
+                    placeholder="Subject" type="text" class="form__input">
+                  <textarea maxlength="250" oninput="formIsValid(this)" required name="text" placeholder="Message"
+                    class="form__input form__input_large"></textarea>
+                </div>
+                <button disabled class="form__button">Get Started</button>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <ul class="social-media-links social-media-links__small">
+          <li class="social-media-links__items">
+            <a href="#" class="social-media-links__link-wrapper">
+              <img loading="lazy" height="20" width="20" src="assets/images/facebook-logo.svg" alt="Facebook"
+                class="social-media-links__link">
+            </a>
+          </li>
+          <li class="social-media-links__items">
+            <a href="#" class="social-media-links__link-wrapper">
+              <img loading="lazy" height="20" width="20" src="assets/images/twitter-logo.svg" alt="Twitter"
+                class="social-media-links__link">
+            </a>
+          </li>
+          <li class="social-media-links__items">
+            <a href="#" class="social-media-links__link-wrapper">
+              <img loading="lazy" height="20" width="20" src="assets/images/google-plus.svg" alt="Google Plus"
+                class="social-media-links__link">
+            </a>
+          </li>
+          <li class="social-media-links__items">
+            <a href="#" class="social-media-links__link-wrapper">
+              <img loading="lazy" height="20" width="20" src="assets/images/pinterest-logo.svg" alt="Pinterest"
+                class="social-media-links__link">
+            </a>
+          </li>
+          <li class="social-media-links__items">
+            <a href="#" class="social-media-links__link-wrapper">
+              <img loading="lazy" height="20" width="20" src="assets/images/instagram-logo.svg" alt="Instagram"
+                class="social-media-links__link">
+            </a>
+          </li>
+          <li class="social-media-links__items">
+            <a href="#" class="social-media-links__link-wrapper">
+              <img loading="lazy" height="20" width="20" src="assets/images/stumbleupon-logo.svg" alt="Stumbleupon"
+                class="social-media-links__link">
+            </a>
+          </li>
+          <li class="social-media-links__items">
+            <a href="#" class="social-media-links__link-wrapper">
+              <img loading="lazy" height="20" width="20" src="assets/images/rss-icon.svg" alt="Rss"
+                class="social-media-links__link">
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__copyright">© 2015 Axure Themes</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="scripts/form-button-disable.js"></script>
+</body>
+
+</html>

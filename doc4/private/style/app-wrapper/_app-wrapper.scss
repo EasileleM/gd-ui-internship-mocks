@@ -1,0 +1,18 @@
+@import "../global/global";
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__top-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 600px;
+
+    @media screen and (max-width: $screen-medium-size){
+      min-height: 980px;
+    }
+  }
+}
