@@ -128,14 +128,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 0;
+    padding: 0;
     cursor: pointer;
     background-color: $form-button-bg-color;
     box-shadow: 0 0 2px rgba(0,0,0,0.5);
     text-decoration: none;
     color: $form-button-text-color;
     font: 400 $font-size-button $primary-font;
-    border: 0;
-
+    
     &:hover {
       opacity: 0.95;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
